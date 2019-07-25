@@ -1,135 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>web page</title>
-  <meta charset="utf-8">
+<title>web page2</title>
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
-  integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-  <style>
-    .nav.nav-pills.nav-stacked li a {
-    color: white;}
-	.nav.nav-pills.nav-stacked li a:hover {
-    color: blue;
-  </style>
-</head>
-<body>
-<nav class="navbar navbar-default" style="background-color:white">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#" style="font-size:25px;margin-left:25px;font-family:cursive;color:gray;">Fintech</a>
-    </div>
-         <a href="#" class="btn btn-default" role="button" style="border-radius:20px;border:box;border-color:#46b9b9;margin-left:120px;margin-top:10px;margin-bottom:10px;color:#46b9b9;padding-right:35px;padding-left:25px;padding-bottom:15px;padding-top:15px;">Help & Support</a>
-  </div>
-</nav>   	 
-<div class="container-fluid">
-  <div class="row content">
   
-    <div class="col-sm-2 sidenav" style="background-color:#6c8093;">
-	<br/><br/><br/><br/>
-	 <h4 style="color:white"><i class="fa fa-bank" style="font-size:20px;color:white;"></i>  ACCOUNT</h4>
-	  <ul class="nav nav-pills nav-stacked" style="font-size:14px;">
-	  <li><a href="#">Send Money</a></li><br/>
-	   <li><a href="#">Top Up</a></li><br/>
-	    <li><a href="#">FX Currency</a></li>
-	  </ul>
-	  <br/><br/>
-	  <h4  style="color:white;"> <i class='fab fa-stack-exchange' style='color:white'></i>  EXCHANGE</h4>
-	  <ul class="nav nav-pills nav-stacked" style="font-size:14px; ">
-	  <li><a href="#">Bitcoin</a></li><br/>
-	   <li><a href="#">Ethereum</a></li>
-	  </ul>
-	  <br/><br/>
-	   <h4  style="color:white;"><i class="material-icons">contacts</i> DETAILS</h4>
-	  <ul class=" nav nav-pills nav-stacked" style="font-size:14px; ">
-	  <li><a href="#">My Bank Details</a></li><br/>
-	   <li><a href="#">My Referrals</a></li>
-	   <br/> <br/> <br/> <br/><br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/><br/><br/><br/> <br/><br/><br/><br/><br/><br/><br/>
-	   </div>
-	<div class="col-sm-10 well" style ="background-color: #c4e3ee;">
-	 <br/><br/>
-	  <div class="row rounded"  style="background-color:white;margin-left:20px;margin-right:20px;margin-bottom:25px;border-radius:15px;">
-	     
-		  <div class="col-sm-12 rounded"  style ="background-color:#0080ff;border-radius:15px 15px 0px 0px;">
-		    <div class="row" >
-			 <div class="col-sm-10" style="margin-left:28px;">
-		     <h1  style="color:white;">Refer Friends & Earn Credit</h1><br/>
-			 <h4  style="color:white;"> Intrdoduce a friend to fintech and you'll be credited $100 to your account</h4> 
-			 </div>
-			 <div class="col-sm-2 well" style="background-color:orange;margin-left:830px;margin-top:-123px;">
-			  <h2 style="color:white;text-align:center;">$100</h2>
-			  <h2 style="color:white;text-align:center;">Credit</h2>
-			 </div>
-			 </div>
-			 <br/>
+  <style type="text/css">
+ .label-arrow {
+	position: relative;
+}
+
+
+.label-arrow-left1 {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    margin-left:10px;
+	margin-top:8px;
+}
+
+.label-arrow-left1:before {
+    right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+    border-right-color:#999;
+	border-width: 10px;
+    border-bottom-width: 9px;
+	margin-top: -10px;
+	border-style:solid;
+    
+}
+
+.label-arrow-left {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    margin-left:22px;
+}
+
+.label-arrow-left:before {
+    right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+    border-right-color:#999;
+	border-width: 10px;
+    border-bottom-width: 9px;
+	margin-top: -10px;
+	
+    
+}
+
+
+
+.label-success.label-arrow:after {
+    border-left-color:#5cb85c;
+	
+}
+.label-success.label-arrow:before {
+    border-right-color:#5cb85c;
+	
+}
+.avatar {
+ 
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.avatar1 {
+ 
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  
+}
+.div_hover{
+background-color:white;
+}
+.div_hover:hover{
+background-color:lavender;
+border-radius:10px;
+padding:10px;
+}
+.list_hover{
+color:black;
+}
+.list_hover:hover{
+color:green;
+}
+.dropdwn{
+background-color:#2b2b3b;
+color:white;
+border-radius:12px;
+padding:12px;
+margin-top:-250px;
+}
+
+  </style>
+  </head>
+<body>
+<div class="container-fluid">
+ <div class="row well" >
+  <div class="row content"  >
+	  <div class="col-sm-1 sidenav" style="background-color:#2b2b3b;border-radius:20px 0px 0px 20px;"><!--Sidebar(Main division-first half)-->
+		<h3><font color="#b4b4fd">Logo</font></h3>
+        <ul class="nav nav-pills nav-stacked">
+			<li style="margin-bottom:15px;margin-top:10px;color:#b4b4fd"><a href="#section1" ><span class="glyphicon glyphicon-blackboard" style="font-size:26px;margin-left:15px;color:#b4b4fd"></span>
+			<font color="#b4b4fd">Projects</font></a></li>
+			<li style="margin-bottom:15px;font-color:#b4b4fd;"><a href="#section2"><span class="glyphicon glyphicon-user" style="font-size:26px;margin-left:15px;color:#b4b4fd"></span>
+			<font color="#b4b4fd">Candidates</font></a></li>
+			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">&#xf2b5;</i>
+			<font color="#b4b4fd">Clients</font></a></li>
+			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">&#xf2ba;</i>
+			<font color="#b4b4fd">Contacts</font></a></li>
+			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">&#xf073;</i>
+			<font color="#b4b4fd">Organizer</font></a></li>
+			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">&#xf0f6;</i>
+			<font color="#b4b4fd">Reports</font></a></li>
+			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">	&#xf07b;</i>
+			 <font color="#b4b4fd"> Files</font></a></li>
+			<li style="margin-bottom:410px;"><a href="#section3"><i style="font-size:26px;margin-left:15px;color:#b4b4fd" class="fa">	&#xf002;</i>
+			 <font color="#b4b4fd"> Search 
+	Candidates</font></a></li>
+        </ul>
+	  </div>
+	  <div class="col-sm-11" style="border-radius:0px 20px 20px 0px;"><!--Seond half -main division-->
+		  <div class="row">
+			   <div class="col-sm-12" style="border-radius:0px 20px 0px 0px;background-color:lavender;">
+					  <ul class= "nav navbar-nav navbar-right">
+					  <li><a href="#"><i style="font-size:22px;margin-left:15px;" class="fa">&#xf0f3;</i></a></li>
+					  <li><a href="#"> <span class="glyphicon" style="font-size:22px;margin-left:15px;">&#xe111;</span></a></li>
+					  <li><a href="#"><i style="font-size:22px;margin-left:15px;" class="fa">&#xf0e0;</i></a></li>
+					  <li><a href="#"> <img src=" https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750"
+					  class="img-circle" height="50" width="50" alt="Avatar"></a></li>
+					  <li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="#">MyAccount <span class="caret"></span></a>
+						 <ul class="dropdown-menu dropdwn">
+						  <li><a href="#"><font color="#b4b4fd">Name</font></a></li>
+						  <li><a href="#"><font color="#b4b4fd">Email:</font></a></li><br/><br/>
+						  <li><a href="#"><font color="#b4b4fd">Profile</font></a></li>
+						  <li><a href="#"><font color="#b4b4fd">Settings</font></a></li>
+						  <li><a href="#"><font color="#b4b4fd">Language</font></a></li>
+						  <li><a href="#"><font color="#b4b4fd">Help</font></a></li>
+						  <li><a href="#"><font color="#b4b4fd">About</font></a></li><br/>
+						  <li><a href="#"><font color="#b4b4fd">Logout</font></a></li>
+						 </ul>
+					  </li>
+					  </ul>
+			   </div>
 		  </div>
+	      <div class="row"><!--below horizontal navigation bar-->
+				 <div class="col-sm-3" >
+						<div class="row">
+						   <span class="glyphicon glyphicon-search" style="font-size:20px;color:#b4b4fd;margin-top:10px;margin-left:10px;"></span>                       <span class="glyphicon glyphicon-filter pull-right" style="font-size:20px;color:#b4b4fd;margin-right:17px;margin-bottom:15px;padding:10px;">   <input type="checkbox" name="filter" style="height:16px;width:16px;color:#b4b4fd"></span></pre>
+						               
+						</div>
+						<div class="sidenav border">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="div_hover">
+							   <div >
+								   <a href="#section1">Senior .Net Developer <span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p >4-IT Artists In Technology</p><br/><br/>
+									<div class="row" style="margin-bottom:15px;">
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7">
+										 <span class="label label-success label-arrow label-arrow-left1">Senior</span>
+										 <span class="label label-success label-arrow label-arrow-left1">QA</span>
+										 <span class="label label-success label-arrow label-arrow-left1">Pro Devs</span>
+									  </div>
+									</div>
+															
+								</div>
+							</li><hr/>
+							<li class="div_hover">
+								 <div>
+								   <a href="#section1">Senior Java Developer <span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p>DevLabs</p><br/><br/>
+									<div class="row" style="margin-bottom:15px;">
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7">
+										 <span class="label label-success label-arrow label-arrow-left1">Senior</span>
+										 
+									  </div>
+									</div>
+															
+								</div>
+							</li><hr/>
+							<li class="div_hover">
+							   <div>
+								   <a href="#section1">Front End Engineer <span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p>The Frontiers</p><br/><br/>
+									<div class="row" style="margin-bottom:15px;">
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7">
+										 <span class="label label-success label-arrow label-arrow-left1">Krakow</span>
+										 
+									  </div>
+									</div>
+															
+								</div>
+							</li><hr/>
+							<li class="div_hover">
+								 <div>
+								   <a href="#section1">UI/UX Designer <span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p>Mayala Ltd.</p><br/><br/>
+									<div class="row" style="margin-bottom:15px;">
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7">
+										 <span class="label label-success label-arrow label-arrow-left1">Design</span>
+										 
+									  </div>
+									</div>
+															
+								</div>
+							</li><hr/>
+							<li class="div_hover">
+							   <div>
+								   <a href="#section1">Scala Developer <span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p>4Devs</p><br/><br/>
+									<div class="row" style="margin-bottom:15px;">
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7">
+										 
+										 <span class="label label-success label-arrow label-arrow-left1">Pro Devs</span>
+									  </div>
+									</div>
+															
+								</div>
+							
+							</li><hr/>
+							<li class="div_hover">
+							   <div style="bottom-margin:15px;">
+								   <a href="#section1">QA Engineer<span class="badge pull-right" style="margin-left:5px;">25</span></a>
+									<p>Faluma Labs</p><br/><br/>
+									<div class="row"  style="margin-bottom:15px;" >
+									  <div class="col-sm-5">
+										   <ul class="list-inline">
+												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
+												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
+									
+											</ul>
+									   </div>
+									  <div class="col-sm-7" >
+										 <span class="label label-success label-arrow label-arrow-left1">QA</span>
+									  </div>
+									</div>
+									<div class="pull-right" style="margin-bottom:15px;">
+									<button  type="button" class="btn btn-success" style="border-radius: 50%;">+</button>
+                                    </div>									
+								</div>
+							 
+							</li>
+						</ul>
+						</div>
+				 </div>
+				 <div class="col-sm-9" ><!--content div-->
+					   <div class="row" style="margin-left:15px;">
+						   <h2><input type="checkbox" name="filter" style="width:20px;height:20px;">  Senior .Net Developer</h2>
+						   <p style="margin-left:16px;">4-IT Artists In Technology<p>
+					   </div>
+					   <br/>
+					   <div style="margin-left:15px;">
+					       <ul class="list-inline">
+								<li style="font-size:17px;color:black;"><a href="#"><font color="black">Info</font></a></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Candidates</a></font></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Recruitment</a></font></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Activity</a></font></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Shares</a></font></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Documents</a></font></li>
+								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="black">Summary</a></font></li>
+                          </ul>
+					   </div>
+					   <br/><br/>
+					   <div class="row" style="margin-left:15px;"><!--Details-->
+							<div class="col-sm-6">
+								<div class="row" style="margin-top:10px;">
+								   <ul class="list-inline">
+										<li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar1" style="margin-left:8px;"> </a></li>
+										<li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-left:8px;"></a></li>
+										<li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-left:8px;"></a></li>
+									
+									</ul>
+								</div>
+								<br/>
+								<div class="row" style="margin-left:5px;">
+								   <h4><b>Details</b></h4>
+								</div>
+								<div class="row">
+								  <div class="col-sm-6"style=" margin-top:10px;">
+								    <p>Starting Date</p>
+									<p>Ending Date</p>
+									<p>Creation Time</p>
+									<p>Vacancies</p>
+									<p>Extras</p>
+									<p>Ret. Number</p>
+								  </div>
+								  <div class="col-sm-6" style=" margin-top:10px;">
+								    <p><b>23.06.2018</b></p>
+									<p><b>28.09.2018</b></p>
+									<p><b>23.06.2018 16:08</b></p>
+									<p><b>6</b></p>
+									<p><b>none</b></p>
+									<p><b>10089</b></p>
+									
+								  </div>
+								</div>
+							</div>
+							<div class="col-sm-6" >
+							<div class="row">
+								   <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-top:10px;margin-left:10px;"></a></li>
+								</div>
+								<br/>
+								<div class="row">
+								  <div class="col-sm-6" style=" margin-top:46px;">
+								    <p>Currency</p>
+									<p>Min Income</p>
+									<p>Max Income</p>
+									<p>Fee type</p>
+									<p>Fee</p>
+									<p>Responsible Person</p>
+								  </div>
+								  <div class="col-sm-6" style=" margin-top:46px;">
+								    <p><b>PLN</b></p>
+									<p><b>12 000 PLN</b></p>
+									<p><b>20 000 PLN</b></p>
+									<p><b>any</b></p>
+									<p><b>3%</b></p>
+									<p><b>Mat Lomin</b></p>
+								  </div>
+								</div>
+							
+							</div>
+                        </div><!--end of 'details' div-->
+                        <div class="row" style="margin-left:15px;margin-top:15px; font-size:15px;">
+                          <h4><b>Description <small style="color:green">more</small></b></h4>
+						  <p>This position is for a Software engineer to work in a fast-paced, Agile environment.the successful candidate is responsible for </p>
+						  <p>participating  in the full Agile application development life cycle for the new development design,construction and testing of  </p>
+						  <p> mobile and web-based health applications.The developer will also participate peer reviews and unit testing and must be adaptable </p>
+                          <p>to different responsibilities.</p>
+						</div>
+                        <div class='row' style="margin-left:15px;margin-top:15px;font-size:15px;">
+                         <h4><b>Location</h4></p>
+						    <div class="radio" style="font-size:15px;">
+							  <label><input type="radio" name="optradio">Warsaw, Poland</label>
+							</div>
+							<div class="radio" style="font-size:15px;">
+							  <label><input type="radio" name="optradio">Krakow, Poland</label>
+							</div>
+                        </div>
+                        <div class='row' style="margin-left:15px;margin-top:15px;margin-bottom:10px;">
+                         <h4><b>Labels</b></h4>
+							 <span class="label label-success label-arrow label-arrow-left border border-danger">CRM</span>
+							 <span class="label label-success label-arrow label-arrow-left">Krakow</span>
+							 <span class="label label-success label-arrow label-arrow-left">Startup</span>
+							 <span class="label label-success label-arrow label-arrow-left">Personal</span>
+							 <span class="label label-success label-arrow label-arrow-left">Interesting </span>
+							 <span class="label label-success label-arrow label-arrow-left">Sales</span>
+							 <span class="label label-success label-arrow label-arrow-left">Design</span>
+							 <span class="label label-success label-arrow label-arrow-left">Long-Term</span>
+							 <span class="label label-success label-arrow label-arrow-left">Add..</span>
+						     
+                        </div>						
+				  </div><!--content div-- end-->
+			   
+			 </div><!--closing tag of -> 'below horizontal navigation bar' div-->
 		  
-		  <br/><br/>
-	        <div class="col-sm-12" style="margin-left:27px;color:#808080;margin-top:25px;">
-			<br/><h4 >Share my referral link with friends</h4><br/>
 		  </div>
-		  <div class="form-group input-group" style="margin-left:17px;margin-right:15px;">
-          <input type="text" class="form-control" style="border-radius:20px 0px 0px 20px;padding:21px;" placeholder="htttp://www.demotnkdfnkdfjn.sjdfhsjf">
-          <span class="input-group-btn">
-            <button class="btn btn-default" style="border-radius:0px 20px 20px 0px;background-color:orange;" type="button">
-              <i class="material-icons">link</i> Copy Link </button>
-            
-          </span>        
-        </div> <br/><br/>
-		
-		  
-		  
-          <button type="button" class="btn btn-default" style="border-radius:24px;padding:20px;padding-bottom:15px;padding-top:15px;margin-bottom:20px;margin-left:25px;"><i style='font-size:24px;color:red;' class='fab'>&#xf1a0;</i> <i class="material-icons" style="font-size:24px;color:blue">&#xe0e0;</i>  Import Contacts</button>
-		  <button type="button" class="btn btn-primary active" style="border-radius:24px;margin-left:35px;margin-bottom:20px;padding-right:35px;padding-left:25px;padding-bottom:15px;padding-top:15px;"><i class="fab fa-facebook" style="font-size:24px;color:white;"></i>    facebook</button>
-          <button type="button" class="btn btn-primary disabled" style="border-radius:24px;margin-left:35px;margin-bottom:20px;padding-right:35px;padding-left:25px;padding-bottom:15px;padding-top:15px;"><i class="fab fa-twitter" style="font-size:24px;color:white;"></i>   Twitter</button>
-		  <button type="button" class="btn btn-primary active" style="border-radius:24px;margin-left:35px;margin-bottom:20px;padding-right:35px;padding-left:25px;padding-bottom:15px;padding-top:15px;"><i class="fab fa-linkedin" style="font-size:24px;color:white;"></i>     LinkedIn</button>
-          <button type="button" class="btn btn-primary disabled" style="border-radius:24px;margin-left:35px;margin-bottom:20px;padding-right:35px;padding-left:25px;padding-bottom:15px;padding-top:15px;"><span class="glyphicon glyphicon-envelope"  style="font-size:24px;"></span>    Email</button>
-  <br/><br/><br/><br/>	 
-	 </div>
-	  <br/><br/>
-	  <div class="row" style=" margin-left:14px;margin-right:14px;">
-	   <div class="col-sm-3">
-	    <div class="well">
-		<h4 style="color:gray;text-align:center;"> 21</h4><br/>
-	    <p><pre>       <i style="font-size:54px;color:#5799db" class="fa">&#xf0c0;</i></pre> <br/></p><h4 style="color:#47c2eb;text-align:center"> Referral Signups</h4><br/>
-	    </div>
-		
-	   </div>
-	   <div class="col-sm-3">
-	    <div class="well">
-		<h4 style="color:gray;text-align:center"> 12</h4><br/>
-	    <p><pre>        <i style="font-size:54px;color:#5799db;" class="fa">&#xf2b5;</i></pre> <br/></p><h4 style="color:#47c2eb;text-align:center"> Successful Referrals </h4><br/>
-	    </div>
-	   </div>
-	   <div class="col-sm-3">
-	    <div class="well">
-		<h4 style="color:gray;text-align:center"> 7</h4><br/>
-	    <p><pre>         <span class="glyphicon glyphicon-bitcoin" style="font-size:54px;color:#5799db;" ></span></pre><br/></p><h4 style="color:#47c2eb;text-align:center"> Exchanged Crypto </h4><br/>
-	    </div>
-		<br/><br/><br/><br/>
-	   </div>
-	   <div class="col-sm-3">
-	    <div class="well">
-		<h4 style="color:gray;text-align:center"> 5</h4><br/>
-	    <p><pre>        <i style="font-size:54px;color:#5799db;" class="fa">&#xf155;</i></pre><br/></p><h4 style="color:#47c2eb;text-align:center"> Credits Earned </h4><br/>
-	    </div>
-	   </div>
-	  	
 	  
-	</div>
-	<h5 style="text-align:center;">Please Note that some terms and conditions apply.Your friends will need to verify their identity</h5>
-	<h5 style="text-align:center;">                                            before any cash rewards are apid to your account.</h5>
-  </div>
+	   
+	  </div>
+ </div>
+ </div>
 </div>
-</div>
-</body>
-</html>
