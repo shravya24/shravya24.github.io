@@ -78,6 +78,13 @@ background-color:#2b2b3b;
 .list-inline:hover{
 font-color:black;
 }
+.navbar-toggle, .icon-bar {
+    border:1px solid white;
+}
+.new{
+ border:1px solid blue;
+}
+
 
   </style>
   </head>
@@ -85,9 +92,16 @@ font-color:black;
 <div class="container-fluid">
  <div class="row well" >
   <div class="row content"  >
-	  <div class="col-sm-1 sidenav" style="background-color:#2b2b3b;border-radius:25px 0px 0px 25px;font-family:verdana;"><!--Sidebar(Main division-first half)-->
-		<h3><font color="#b4b4fd">Logo</font></h3>
-        <ul style="margin-left:-16px;margin-right:1px;">
+	  <div class="col-sm-1 " style="background-color:#2b2b3b;border-radius:25px 0px 0px 25px;font-family:verdana;"><!--Sidebar(Main division-first half)-->
+		<div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar" ></span>
+        <span class="icon-bar" ></span>
+        <span class="icon-bar" ></span>                        
+      </button>
+      <a class="navbar-brand" href="#">LOGO</a>
+    </div>
+        <ul class="sidenav collapse navbar-collapse" style="margin-left:-16px;margin-right:1px;" id="myNavbar">
 			<li class="side_hover" ><a href="#section1" ><span class="glyphicon glyphicon-blackboard" style="font-size:26px;color:#b4b4fd"></span>
 			<font color="#b4b4fd"><p style="margin-left:-12px">Projects</p></font></a></li><br/>
 			<li style="margin-bottom:15px;font-color:#b4b4fd;"><a href="#section2"><span class="glyphicon glyphicon-user glyph" style="font-size:26px;color:#b4b4fd;margin-left:10px;"></span>
@@ -110,7 +124,14 @@ font-color:black;
 	  <div class="col-sm-11" style="border-radius:0px 25px 25px 0px;"><!--Seond half -main division-->
 		  <div class="row">
 			   <div class="col-sm-12" style="border-radius:0px 25px 0px 0px;">
-					  <ul class= "nav navbar-nav navbar-right">
+			      <div class="navbar-header">
+						  <button type="button" class="navbar-toggle new" data-toggle="collapse" data-target="#myNavbar1" >
+							<span class="icon-bar new" ></span>
+							<span class="icon-bar new" ></span>
+							<span class="icon-bar new" ></span>                        
+						  </button>
+						</div>
+					  <ul class= "nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar1">
 					  <li><a href="#"><i style="font-size:22px;margin-left:15px;color:#bfbfbf;" class="fa">&#xf0f3;</i></a></li>
 					  <li><a href="#"> <span class="glyphicon" style="font-size:22px;margin-left:15px;color:#bfbfbf;">&#xe111;</span></a></li>
 					  <li><a href="#"><i style="font-size:22px;margin-left:15px;color:#bfbfbf;" class="fa">&#xf0e0;</i></a></li>
@@ -302,7 +323,7 @@ font-color:black;
 								   <h4><b>Details</b></h4>
 								</div>
 								<div class="row" style="font-family:verdana;">
-								  <div class="col-sm-6"style=" margin-top:10px;color:gray;">
+								  <div class="col-xs-6"style=" margin-top:10px;color:gray;">
 								    <p>Starting Date</p>
 									<p>Ending Date</p>
 									<p>Creation Time</p>
@@ -310,7 +331,7 @@ font-color:black;
 									<p>Extras</p>
 									<p>Ret. Number</p>
 								  </div>
-								  <div class="col-sm-6" style=" margin-top:10px;">
+								  <div class="col-xs-6" style=" margin-top:10px;">
 								    <p><b>23.06.2018</b></p>
 									<p><b>28.09.2018</b></p>
 									<p><b>23.06.2018 16:08</b></p>
@@ -327,7 +348,7 @@ font-color:black;
 								</div>
 								<br/>
 								<div class="row" style="font-family:verdana;">
-								  <div class="col-sm-6" style=" margin-top:52px;color:gray;">
+								  <div class="col-xs-6" style=" margin-top:52px;color:gray;">
 								    <p>Currency</p>
 									<p>Min Income</p>
 									<p>Max Income</p>
@@ -335,7 +356,7 @@ font-color:black;
 									<p>Fee</p>
 									<p>Responsible Person</p>
 								  </div>
-								  <div class="col-sm-6" style=" margin-top:52px;">
+								  <div class="col-xs-6" style=" margin-top:52px;">
 								    <p><b>PLN</b></p>
 									<p><b>12 000 PLN</b></p>
 									<p><b>20 000 PLN</b></p>
