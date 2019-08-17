@@ -1,410 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>web page2</title>
+<title>dashboard</title>
  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <style type="text/css">
- .label-arrow {
-	position: relative;
-}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
 
-.label-success.label-arrow:after {
-    border-left-color:#5cb85c;
-	
-}
-.label-success.label-arrow:before {
-    border-right-color:#5cb85c;
-	
-}
-.avatar {
- 
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.avatar1 {
- 
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  
-}
-.div_hover{
-background-color:white;
-}
-.div_hover:hover{
-background-color:lavender;
-border-radius:10px;
-padding:10px;
-}
-.list_hover{
-color:black;
-}
-.list_hover:hover{
-color:green;
-}
-.dropdwn{
-background-color:#2b2b3b;
-color:white;
-border-radius:12px;
-padding:17px;
-margin-top:-250px;
-
-}
-.label.label-outlined.label-success {
-  border-color: green;
-  color: green;
-}
-.label.label-outlined {
-  border-width: 1px;
-  border-style: solid;
-  background-color: transparent
-}
-.label.label-success {
-  background-color: #64DD17
-}
-
-.side_hover{
-padding:10px;
-background-color:#2b2b3b;
-
-}
-.list-inline:hover{
-font-color:black;
-}
-.navbar-toggle, .icon-bar {
-    border:1px solid white;
-}
-.new{
- border:1px solid blue;
-}
-
-
-  </style>
-  </head>
+</head>
 <body>
 <div class="container-fluid">
- <div class="row well" >
-  <div class="row content"  >
-	  <div class="col-sm-1 " style="background-color:#2b2b3b;border-radius:25px 0px 0px 25px;font-family:verdana;"><!--Sidebar(Main division-first half)-->
-		<div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-        <span class="icon-bar" ></span>
-        <span class="icon-bar" ></span>
-        <span class="icon-bar" ></span>                        
-      </button>
-      <a class="navbar-brand" href="#">LOGO</a>
-    </div>
-        <ul class="sidenav collapse navbar-collapse" style="margin-left:-16px;margin-right:1px;" id="myNavbar">
-			<li class="side_hover" ><a href="#section1" ><span class="glyphicon glyphicon-blackboard" style="font-size:26px;color:#b4b4fd"></span>
-			<font color="#b4b4fd"><p style="margin-left:-12px">Projects</p></font></a></li><br/>
-			<li style="margin-bottom:15px;font-color:#b4b4fd;"><a href="#section2"><span class="glyphicon glyphicon-user glyph" style="font-size:26px;color:#b4b4fd;margin-left:10px;"></span>
-			<font color="#b4b4fd"><p style="margin-left:-18px">Candidates</p></font></a></li><br/>
-			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:5px;" class="fa">&#xf2b5;</i>
-			<font color="#b4b4fd"><p style="margin-left:-5px">Clients</p></font></a></li><br/>
-			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:8px;" class="fa">&#xf2ba;</i>
-			<font color="#b4b4fd"><p style="margin-left:-9px">Contacts</p></font></a></li><br/>
-			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:8px;" class="fa">&#xf073;</i>
-			<font color="#b4b4fd"><p style="margin-left:-12px">Organizer</p></font></a></li><br/>
-			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:8px;" class="fa">&#xf0f6;</i>
-			<font color="#b4b4fd"><p style="margin-left:-9px">Reports</p></font></a></li><br/>
-			<li style="margin-bottom:15px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:8px;" class="fa">	&#xf07b;</i>
-			 <font color="#b4b4fd"><p style="margin-left:1px">  Files</p></font></a></li><br/>
-			<li style="margin-bottom:410px;"><a href="#section3"><i style="font-size:26px;color:#b4b4fd;margin-left:8px;" class="fa">	&#xf002;</i>
-			 <font color="#b4b4fd"><p style="margin-left:-1px"> Search </p>
-	<p style="margin-left:-18px;margin-top:-9px;">Candidates</p></font></a></li>
-        </ul>
-	  </div>
-	  <div class="col-sm-11" style="border-radius:0px 25px 25px 0px;"><!--Seond half -main division-->
-		  <div class="row">
-			   <div class="col-sm-12" style="border-radius:0px 25px 0px 0px;">
-			      <div class="navbar-header">
-						  <button type="button" class="navbar-toggle new" data-toggle="collapse" data-target="#myNavbar1" >
-							<span class="icon-bar new" ></span>
-							<span class="icon-bar new" ></span>
-							<span class="icon-bar new" ></span>                        
-						  </button>
-						</div>
-					  <ul class= "nav navbar-nav navbar-right collapse navbar-collapse" id="myNavbar1">
-					  <li><a href="#"><i style="font-size:22px;margin-left:15px;color:#bfbfbf;" class="fa">&#xf0f3;</i></a></li>
-					  <li><a href="#"> <span class="glyphicon" style="font-size:22px;margin-left:15px;color:#bfbfbf;">&#xe111;</span></a></li>
-					  <li><a href="#"><i style="font-size:22px;margin-left:15px;color:#bfbfbf;" class="fa">&#xf0e0;</i></a></li>
-					  <li><a href="#"> <img src=" https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750"
-					  class="img-circle" height="45" width="45" alt="Avatar"></a></li>
-					  <li class="dropdown dropdown-default"><div style="margin-top:20px;"><a class="dropdown-toggle" data-toggle="dropdown" href="#" ><font color="black"><b>My Account</b></font> <span class="caret"></span></a>
-                      						
-						<ul class="dropdown-menu dropdwn" style="margin-top:29px;margin-right:5px;">
-						  <li><a href="#"><font color="#b4b4fd">Name</font></a></li>
-						  <li><a href="#"><font color="#b4b4fd">Email:</font></a></li><br/><br/>
-						  <li><a href="#"><font color="#b4b4fd">Profile</font></a></li>
-						  <li><a href="#"><font color="#b4b4fd">Settings</font></a></li>
-						  <li><a href="#">
-						  <font color="#b4b4fd">      Language</font></a></li>
-						  <li><a href="#"><font color="#b4b4fd">Help</font></a></li>
-						  <li><a href="#"><font color="#b4b4fd">About</font></a></li><br/>
-						  <li><a href="#"><font color="#b4b4fd">Logout</font></a></li>
-						 </ul>
-						</div> 
-					  </li>
-					  </ul>
-			   </div>
-		  </div>
-	      <div class="row"><!--below horizontal navigation bar-->
-				 <div class="col-sm-3" style="font-family:verdana;">
-						<div class="row">
-						   <span class="glyphicon glyphicon-search" style="font-size:20px;color:#bfbfbf;margin-top:10px;margin-left:10px;"></span>                       <span class="glyphicon glyphicon-filter pull-right" style="font-size:20px;color:#bfbfbf;margin-right:17px;margin-bottom:15px;padding:10px;">   <input type="checkbox" name="filter" style="height:16px;width:16px;color:#b4b4fd"></span></pre>
-						               
-						</div>
-						<div class="sidenav border" style="font-family:verdana;">
-						<ul class="nav nav-pills nav-stacked">
-							<li class="div_hover">
-							   <div >
-								   <a href="#section1"><font color="black">Senior .Net Developer</font> <span class="badge pull-right" style="margin-left:5px;background-color:#eaeafb;margin-right:10px;mrgin-top:10px;"><font color="green">25</font></span></a>
-									<p ><small><font color="gray">4-IT Artists In Technology</font></small></p><br/><br/>
-									<div class="row" style="margin-bottom:15px;">
-									  <div class="col-sm-4">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-19px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-8">
-										 <span class="label label-success label-outlined " style="background-color:white;color:green;margin-left:1px;">Senior</span>
-										 <span class="label label-success label-outlined " style="background-color:white;color:	#ffbf00;border-color:#ffbf00;margin-left:1px;">QA</span>
-										 <span class="label label-success label-outlined" style="background-color:white;color:#00bfff;border-color:#00bfff;margin-left:1px;">Pro Devs</span>
-									  </div>
-									</div>
-															
-								</div>
-							</li><hr/>
-							<li class="div_hover">
-								 <div>
-								   <a href="#section1"><font color="black">Senior Java Developer</font> </a>
-									<p><small><font color="gray">DevLabs</font></small></p><br/><br/>
-									<div class="row" style="margin-bottom:15px;">
-									  <div class="col-sm-5">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-19px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-7">
-										 <span class="label label-success label-outlined " style="background-color:white;color:green;">Senior</span>
-										 
-									  </div>
-									</div>
-															
-								</div>
-							</li><hr/>
-							<li class="div_hover">
-							   <div>
-								   <a href="#section1"><font color="black">Front End Engineer </font><span class="badge pull-right" style="margin-left:5px;background-color:#eaeafb;margin-right:10px;margin-top:10px;"><font color="green">14</font></span></a>
-									<p><small><font color="gray">The Frontiers</font></small></p><br/><br/>
-									<div class="row" style="margin-bottom:15px;">
-									  <div class="col-sm-5">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-7">
-										 <span class="label label-outlined " style="background-color:white;color:orange;border-color:orange;">Krakow</span>
-										 
-									  </div>
-									</div>
-															
-								</div>
-							</li><hr/>
-							<li class="div_hover">
-								 <div>
-								   <a href="#section1"><font color="black">UI/UX Designer</font> <span class="badge pull-right" style="margin-left:5px;background-color:#eaeafb;margin-right:10px;margin-top:10px;"><font color="green">7</font></span></a>
-									<p><small><font color="gray">Mayala Ltd.</font></small></p><br/><br/>
-									<div class="row" style="margin-bottom:15px;">
-									  <div class="col-sm-5">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-7">
-										 <span class="label label-outlined " style="background-color:white;color:#ec136a;border-color:#ec136a;">Design</span>
-										 
-									  </div>
-									</div>
-															
-								</div>
-							</li><hr/>
-							<li class="div_hover">
-							   <div>
-								   <a href="#section1"><font color="black">Scala Developer</font> </a>
-									<p><small><font color="gray">4Devs</font></small></p><br/><br/>
-									<div class="row" style="margin-bottom:15px;">
-									  <div class="col-sm-5">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-7">
-										 
-										 <span class="label label-outlined " style="background-color:white;color:#00bfff;border-color:#00bfff;">Pro Devs</span>
-									  </div>
-									</div>
-															
-								</div>
-							
-							</li><hr/>
-							<li class="div_hover">
-							   <div style="bottom-margin:15px;">
-								   <a href="#section1"><font color="black">QA Engineer</font><span class="badge pull-right" style="margin-left:5px;background-color:#eaeafb;margin-right:10px;margin-top:10px;"><font color="green">7</font></span></a>
-									<p><small><font color="gray">Faluma Labs</font></small></p><br/><br/>
-									<div class="row"  style="margin-bottom:15px;" >
-									  <div class="col-sm-5">
-										   <ul class="list-inline">
-												 <li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar"> </a></li>
-												 <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="margin-left:-10px;"></a></li>
-									
-											</ul>
-									   </div>
-									  <div class="col-sm-7" >
-										 <span class="label label-outlined " style="background-color:white;color:#ffbf00;border-color:#ffbf00;">QA</span>
-									  </div>
-									</div>
-									<div class="pull-right" style="margin-bottom:15px;">
-									<button  type="button" class="btn btn-success" style="border-radius: 50%;">+</button>
-                                    </div>									
-								</div>
-							 
-							</li>
-						</ul>
-						</div>
-				 </div>
-				 <div class="col-sm-9" ><!--content div-->
-					   <div class="row" style="margin-left:15px;font-family:verdana;">
-						   <h3><input type="checkbox" name="filter" style="width:17px;height:17px;"><b>  Senior .Net Developer</b></h3>
-						   <p style="margin-left:16px;">4-IT Artists In Technology<p>
-					   </div>
-					   <br/>
-					   <div style="margin-left:15px; font-family:verdana;">
-					       <ul class="list-inline" >
-								<li style="font-size:17px;color:black;padding:10px;"><a href="#"><font color="gray">Info</font></a></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Candidates</a></font></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Recruitment</a></font></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Activity</a></font></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Shares</a></font></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Documents</a></font></li>
-								<li style="margin-left:15px;font-size:16px;"><a href="#"><font color="gray">Summary</a></font></li>
-                          </ul>
-					   </div>
-					   <br/><br/>
-					   <div class="row" style="margin-left:15px;"><!--Details-->
-							<div class="col-sm-6">
-								<div class="row" style="margin-top:10px;">
-								   <ul class="list-inline">
-										<li><a href="#"> <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar1" style="margin-left:8px;"> </a></li>
-										<li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-left:8px;"></a></li>
-										<li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-left:8px;"></a></li>
-									
-									</ul>
-								</div>
-								<br/>
-								<div class="row" style="margin-left:2px;font-family:verdana;">
-								   <h4><b>Details</b></h4>
-								</div>
-								<div class="row" style="font-family:verdana;">
-								  <div class="col-xs-6"style=" margin-top:10px;color:gray;">
-								    <p>Starting Date</p>
-									<p>Ending Date</p>
-									<p>Creation Time</p>
-									<p>Vacancies</p>
-									<p>Extras</p>
-									<p>Ret. Number</p>
-								  </div>
-								  <div class="col-xs-6" style=" margin-top:10px;">
-								    <p><b>23.06.2018</b></p>
-									<p><b>28.09.2018</b></p>
-									<p><b>23.06.2018 16:08</b></p>
-									<p><b>6</b></p>
-									<p><b>none</b></p>
-									<p><b>10089</b></p>
-									
-								  </div>
-								</div>
-							</div>
-							<div class="col-sm-6" >
-							<div class="row">
-								   <li><a href="#"><img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar1" style="margin-top:10px;margin-left:10px;"></a></li>
-								</div>
-								<br/>
-								<div class="row" style="font-family:verdana;">
-								  <div class="col-xs-6" style=" margin-top:52px;color:gray;">
-								    <p>Currency</p>
-									<p>Min Income</p>
-									<p>Max Income</p>
-									<p>Fee type</p>
-									<p>Fee</p>
-									<p>Responsible Person</p>
-								  </div>
-								  <div class="col-xs-6" style=" margin-top:52px;">
-								    <p><b>PLN</b></p>
-									<p><b>12 000 PLN</b></p>
-									<p><b>20 000 PLN</b></p>
-									<p><b>any</b></p>
-									<p><b>3%</b></p>
-									<p><b>Mat Lomin</b></p>
-								  </div>
-								</div>
-							
-							</div>
-                        </div><!--end of 'details' div-->
-                        <div class="row" style="margin-left:20px;margin-top:15px; font-size:14px;font-family:verdana;">
-                          <h4><b>Description <small style="color:green">more</small></b></h4>
-						  <p>This position is for a Software engineer to work in a fast-paced, Agile environment.the successful candidate is responsible for 
-						  participating  in the full Agile application development life cycle for the new development design, construction and testing of  
-						   mobile and web-based health applications.The developer will also participate peer reviews and unit testing and must be adaptable 
-                         to different responsibilities.</p>
-						</div>
-                        <div class='row' style="margin-left:20px;margin-top:15px;font-size:15px;font-family:verdana;">
-                         <h4><b>Location</h4></p>
-						    <div class="radio" style="font-size:13px;">
-							  <label><input type="radio" name="optradio">Warsaw, Poland</label>
-							</div>
-							<div class="radio" style="font-size:13px;">
-							  <label><input type="radio" name="optradio">Krakow, Poland</label>
-							</div>
-                        </div>
-                        <div class='row' style="margin-left:20px;margin-top:15px;margin-bottom:10px;">
-                         <h4><b>Labels</b></h4>
-							 <span  class="label label-success label-outlined " style="background-color:white;color:#ffbf00;border-color:#ffbf00;margin-left:5px;">CRM</span>
-							 <span  class="label label-success label-outlined " style="background-color:white;color:orange;border-color:orange;margin-left:18px;">Krakow</span>
-							 <span class="label label-outlined " style="background-color:white;color:#ec136a;border-color:#ec136a;margin-left:18px">Startup</span>
-							 <span class="label label-success label-outlined " style="background-color:white;color:green;margin-left:18px;">Personal</span>
-							 <span class="label label-outlined " style="background-color:white;color:#99ddff;border-color:	#99ddff;margin-left:18px">Interesting </span>
-							 <span class="label label-success label-outlined" style="background-color:white;color:#00bfff;border-color:#00bfff;margin-left:18px;">Sales</span>	
-							 <span class="label label-success label-outlined" style="background-color:white;color:blue;border-color:blue;margin-left:18px;">Design</span>
-							 <span class="label label-success label-outlined" style="background-color:white;color:darkgray;border-color:darkgray;margin-left:18px;">Long-Term</span>
-							 <span class="label label-success label-outlined" style="background-color:white;color:black;border-color:black;margin-left:18px;">Add..</span>
-						     
-                        </div>						
-				  </div><!--content div-- end-->
-			   
-			 </div><!--closing tag of -> 'below horizontal navigation bar' div-->
-		  
-		  </div>
-	  
-	   
-	  </div>
- </div>
- </div>
+  <div class="row">
+		<div class="col-xs-8" style=" height:700px !important;background-repeat:no-repeat;">
+		   <image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxENisMBEGwznmR4d_BQVL0f-VcxWSwdSrHdDN7L-9UTBL_je5"
+		   height="700" width="100%"/>
+		
+		</div>
+		<div class="col-xs-4">
+			  <div class="row" style="margin-top:25%;margin-left:5%">
+			  <div class="col-sm-9">
+				<p style="font-size:27px;font-family:'Open Sans', sans-serif"><font color="gray"> ARE YOU A </font></p>
+				<p style="font-size:50px;text-decoration-line:underline;text-decoration-color:gray;text-underline-position: under;"><b>CODER?</b></p>
+				<p style=" font-size:27px;text-align:right;font-family:'Open Sans', sans-serif"><font color="gray" > WE </font><b>NEED</b><font color="gray"> YOU!</font></h3>
+			  </div>
+			</div>
+			<div class="row" style="margin-top:35px;margin-left:5%">
+			<div class="col-xs-12">
+			   <h3 style="color:#0983A3">Join the team</h3>
+			   <h4><b>Positions : 1</b></h4>
+			   <h4> <b>Experience :2-3 years</b></h4>
+			 </div> 
+			</div>
+			<div class="row" style="margin-top:50px;margin-left:5%">
+			<div class="col-xs-12">
+			  <h5><b>Location: City</b></h5>
+			  <h4 style="color:#0983A3"> Send resume : <a href>abc@gmail.com</a></h4>
+			</div>
+			</div>
+		</div>
+  
+  </div>
+
 </div>
+
+
+
+
+
+</body>
+</html>
