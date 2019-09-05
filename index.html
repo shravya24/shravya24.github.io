@@ -1,246 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Projects</title>
+<title>Document Upload</title>
  <meta charset="utf-8">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<style type="text/css">
-.avatar {
- 
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-.topnav a {
-  float: left;
-  display: block;
-  color: gray;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  
-}
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-.topnav a:hover {
-  border-bottom: 2px solid #1ac6ff;
-  color:#1ac6ff;
+  <style type="text/css">
+     /* popup styles */
+.popup {
+  display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
 }
-
-.topnav a.active {
-  border-bottom: 2px solid #1ac6ff;
+.popup-overlay {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
-.label {
+.popup-content {
+	position: absolute;
+  background: #fff;
+	width: 500px;
+	margin: -58px 0 0 -264px;
+	left: 50%;
+	top: 50%;
+	z-index: 11;
+  padding: 14px;
+}
+.close-popup {
   display: inline-block;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  padding: 4px 8px;
-  border-radius: 26px;
-  font-size: 12px;
-  font-weight: 400;
-  color: #FFF;
-   margin-right:10px;
-  margin-bottom:10px
+  position: absolute;
+  top: -8px;
+  right: -30px;
+  font-size: 42px;
 }
 
-.label.label-outlined {
-   border-width: 1px;
-  border-style: solid;
-  border-color: gray;
-  color: gray;
- 
+/* Animations */
+.fadeIn {
+  animation: fadeIn 0.5s ease-in both;
+  -webkit-animation: fadeIn 0.5s ease-in both;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
 }
 
-</style>	
-</head>
-	<body>
-		   <nav class="navbar navbar-inverse" style="background-color:white;border-style:none;padding-top:15px">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <a class="navbar-brand" href="#">WebSitelogo</a>
-		</div>
-		<ul class="nav navbar-nav navbar-right" style="color:black">
-		  <li><a href="#">HOW IT WORKS </a></li>
-		  <li class="dropdown items"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BROWSE <span class="caret"></span></a>
-			<ul class="dropdown-menu">
-			  <li><a href="#">Page 1-1</a></li>
-			  <li><a href="#">Page 1-2</a></li>
-			  <li><a href="#">Page 1-3</a></li>
-			</ul>
-		  </li>
-		  <li class="items"><a href="#">SEARCH</a></li>
-		  <li class="dropdown items"><a class="dropdown-toggle" data-toggle="dropdown" href="#">START A PROFILE</a>
-			
-		  </li>
-		  <li class="items"><a href="#">ADD YOUR AGENCY</a></li>
-		</ul>
-		
+.fadeOut {
+  animation: fadeOut 0.5s ease-out both;
+  -webkit-animation: fadeOut 0.5s ease-out both;
+}
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
+@-webkit-keyframes fadeOut {
+  to { opacity: 0; }
+}
+
+.scaleIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleIn {
+  from { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleOut {
+  animation: scaleOut 0.5s ease-out both;
+  -webkit-animation: scaleOut 0.5s ease-out both;
+}
+@keyframes scaleOut {
+  to { opacity: 0; transform: scale(0.5); }
+}
+@-webkit-keyframes scaleOut {
+  to { opacity: 0; -webkit-transform: scale(0.5); }
+}
+
+.scaleUpIn {
+  animation: scaleIn 0.5s ease-in both;
+  -webkit-animation: scaleIn 0.5s ease-in both;
+}
+.scaleUpOut {
+  animation: scaleUpOut 0.5s ease-in both;
+  -webkit-animation: scaleUpOut 0.5s ease-in both;
+}
+@keyframes scaleUpOut {
+  to { opacity: 0; transform: scale(1.2); }
+}
+@-webkit-keyframes scaleUpOut {
+  to { opacity: 0; -webkit-transform: scale(1.2); }
+}
+
+.scaleDownIn {
+  animation: scaleDownIn 0.5s ease-in both;
+  -webkit-animation: scaleDownIn 0.5s ease-in both;
+}
+.scaleDownOut {
+  animation: scaleOut 0.5s ease-in both;
+  -webkit-animation: scaleOut 0.5s ease-in both;
+}
+@keyframes scaleDownIn {
+  from { opacity: 0; transform: scale(1.2); }
+}
+@-webkit-keyframes scaleDownIn {
+  from { opacity: 0; -webkit-transform: scale(1.2); }
+}
+
+.slideIn {
+  animation: slideIn 0.5s ease-in both;
+  -webkit-animation: slideIn 0.5s ease-in both;
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-50%); }
+}
+@-webkit-keyframes slideIn {
+  from { opacity: 0; -webkit-transform: translateY(-50%); }
+}
+
+.slideOut {
+  animation: slideOut 0.5s ease-out both;
+  -webkit-animation: slideOut 0.5s ease-out both;
+}
+@keyframes slideOut {
+  to { opacity: 0; transform: translateY(50%); }
+}
+@-webkit-keyframes slideOut {
+  to { opacity: 0; -webkit-transform: translateY(50%); }
+}
+
+
+/* Demo Styles */
+
+a {
+  color: rgb(0, 159, 211);
+  text-decoration: none;
+}
+.btn1 {
+  
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 5px 20px;
+}
+.btn1:hover {
+  background: #fff;
+  color: rgb(0, 159, 211);
+}
+.popup {
+    -webkit-perspective: 1200px;
+    -moz-perspective: 1200px;
+    perspective: 1200px;
+}
+.popup-content {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+    
+  </style>
+  
+  </head>
+  <body>
+    <div class="container " >
+	   <div class="row" >
+	     <div class="col-sm-8" style="padding:10px 10px 10px 30px;background-color:white;box-shadow:0px 10px 15px lightgray;margin:90px 2px 30px 20px;padding-bottom:20px">
+		    <h3>Documents Requests </h3>
+			<div class="row" style="padding:20px 10px 10px 10px">
+			  <div class="col-xs-4">
+			    <h4>Company </h4>
+				<div class="row" style="padding-top:15px">
+				  <div class="col-sm-3">
+				     <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" 
+			    class="img-circle" height="50" width="50" alt="Avatar">
+				  </div>
+				  <div class="col-sm-8">
+				    <h5> Dan Cartman </h5>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-xs-5">
+			    <h4>Recruiter </h4>
+				<div class="row" style="padding-top:15px">
+				  <h5> Drawing and Awesome Illustration</h5>
+				</div>
+			  </div>
+			  <div class="col-xs-3">
+			  <h4>Documents </h4>
+			   <div class="row" style="padding-top:15px">
+			     <a href ="#" class="btn1 open-popup" data-id="popup_2" data-animation="scale">Upload </a>
+				 <div id="popup_2" class="popup" >
+					  <div class="popup-overlay"></div>
+					  <div class="popup-content" style="background-color:#f3f7ff">
+						<a href="#" class="close-popup" data-id="popup_2" data-animation="scale">&times;</a>
+						<h2>Files to be uploaded: </h2>
+						<ul>
+						  <li>File 1</li>
+						  <li>File 2</li>
+						  <li>File 3</li>
+						  <li>File 4</li>
+						</ul>  
+						<input type="file">
+					  </div>
+					</div>
+				   </div>
+			  
+			  </div>
+			  <div class="row" style="margin-right:15%;margin-top:120px">
+			  <a href="#" class="pull-right">Show More</a>
+              </div>
+			  </div>
+		 
+		 </div>
+	     <div class="col-sm-3" style="height:257px;box-shadow:0px 10px 15px lightgray;margin:90px 2px 30px 20px;">
+		    <h3>Job Requests</h3>
+		 
+		 </div>
+	   </div>
 	</div>
-	</nav>
-	<div class="container-fluid" style="background-color:#f0f3f4">
-	  <p style="margin-left:5%;margin-top:25px"><a href="#"><font color="black"><span style="margin-top:1%"><i class="material-icons" style="font-size:18px">keyboard_arrow_left</i></span><b> Back to search results</b></font>  </a></p>
-	   <div class="row" style="background-color:white;margin-left:5%;margin-right:5%;margin-top:3%">
-	      <div class="col-sm-7" style="padding-left:3%;padding-top:1%;border-right:1px solid lightgray;margin-top:2%;margin-bottom:2%">
-			  <div class="col-xs-2" style="margin-top:2%">
-				<img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
-				  height='100' width='100' alt='Avatar'>
-			  </div>
-              <div class="col-xs-6" style="margin-left:15px">
-			    <h3>Svetlana Anyukova </h3>
-			    <h6><font color="gray">Full Stack Web Developer </font></h6>
-				<h5><font color="skyblue"> Epic Coders</font></h5>
-				<button class="btn btn-success" style="color:white">Contact </button>
-				<button class="btn " style="border: 1px solid #1ac6ff;color:#1ac6ff;margin-left:15px;background-color:white">Resume </button>
-				
-			  </div>
-			  <div class="col-xs-3 pull-right" style="margin-top:2%" >
-			    <h4> $44/hr </h4>
-			  </div>
-      		  
-		  </div>
-		  <div class="col-sm-5" style="padding-left:2%;padding-top:1%;margin-top:2%;margin-bottom:2%">
-		    <div class="row">
-		     <div class="col-xs-6">
-			    <h5><b>Availability:</b></h5>
-			    <h5><b>Age:</b></h5>
-			    <h5><b>Location:</b></h5>
-			    <h5><b>Years Experience:</b></h5>
-				
-			 
-			 </div>
-			 <div class="col-xs-6">
-			    <h5><font color="gray"> Full Time(40hr/week)</font></h5>
-			    <h5><font color="gray"> 32</font></h5>
-			    <h5><font color="gray"> Sankt Petersburg,Russia</font></h5>
-			    <h5><font color="gray"> 6</font></h5>
-			 
-			 </div>
-		    </div>
-			<div class="row" style="margin-top:5%;margin-left:2%">
-			 <div class="col-sm-12">
-			   <ul class="list-inline">
-			   <li><i class="fa fa-github" style="font-size:24px;color:#38c9fa;margin-right:20px"></i></li>
-			    <li><i class="fa fa-twitter" style="font-size:24px;color:#38c9fa;margin-right:20px"></i></li>
-			    <li><i class="fa fa-facebook" style="font-size:24px;color:#38c9fa;margin-right:20px"></i></li>
-			    <li><i class="fa fa-linkedin" style="font-size:24px;color:#38c9fa;margin-right:20px"></i></li>
-			    <li><i class="fa fa-stack-overflow"  style="font-size:24px;color:#38c9fa;margin-right:20px"></i></li>
-			   </ul>
-			 </div>
-			</div>
-		  </div>
-	    
-	   </div>
-	   <div class="row" style="margin-left:5%;margin-right:5%;margin-top:3%">
-	    <div class="col-sm-12 topnav" style="border-bottom:1px solid lightgray">
-			  <a href="#home">Profile</a>
-			  <a href="#news">CV/Resume</a>
-			 
-	   </div>
-	   </div>
-	   
-	   <div class="row" style="margin-left:5%;margin-right:5%;margin-top:2%">
-	     <div class="col-sm-3" style="background-color:white;padding-left:3%;padding-top:2%">
-		   <h4><b>WEBSITES</b></h4><br/>
-		    <p style="margin-bottom:15px;"><a href="#"><font color="gray"><i class="material-icons" style="font-size:20px;color:gray;">group_work</i>  Website</font></a></p>
-		    <p style="margin-bottom:15px;"><a href="#"><font color="gray"><i class="fa fa-file-text" style="font-size:20px;color:gray;"></i> Blog</font></a></p>
-		    <p style="margin-bottom:15px;"><a href="#"><font color="gray"><span class="glyphicon glyphicon-folder-close"style="font-size:18px;color:gray;"></span>  Portfolio</font></a></p>
-		    
-		 </div>
-		 <div class="col-sm-5" style="background-color:white;margin-left:45px;">
-		  <div class="row" style="padding-left:2%;padding-top:2%;padding-bottom:2%;border-bottom:1px solid lightgray;margin:0px 10px 10px 10px">
-		    <br/><h5><b> ABOUT </b></h5><br/>
-			<p style="font-size:13px; line-height: 1.6;">Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
-			team can track time from pretty much any device.Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
-			team can track time from pretty much any device.Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
-			team can track time from pretty much any device.</p>
-          </div>
-		  <div class="row" style="padding-left:2%;padding-top:2%;border-bottom:1px solid lightgray;margin:0px 10px 10px 10px">
-		    <h5><b>SKILLS</b></h5><br/>
-		     <div class="row" style="margin-bottom:3%;padding-left:2%;">
-			     <div class="label label-outlined">UX</div> <div class="label label-outlined">Sketch</div><div class="label label-outlined">Java</div><div class="label label-outlined">Python</div>
-				 <div class="label label-outlined">Photoshop</div><div class="label label-outlined">JavaScript</div><div class="label label-outlined">Android</div><div class="label label-outlined">IOS</div>
-				 <div class="label label-outlined">Python</div><div class="label label-outlined">Linux</div><div class="label label-outlined">PHP</div>
-				 <div class="label label-outlined">Illustrator</div><div class="label label-outlined">UX</div><div class="label label-outlined">Android</div> <div class="label label-outlined">Java</div>
-				 
-			 </div>
-		  </div>
-		  <div class="row" style="padding-left:2%;padding-top:2%;margin:0px 10px 10px 10px">
-		     <h5><b>LANGUAGES</b></h5><br/>
-             <ul class="list-inline">
-			    <li><font color="gray" >English</font></li>
-				<li><font color="gray"> German</font></li>
-				<li><font color="gray">  French</font></li>
-			 
-              </ul>
-          </div>		  
-		 </div>
-		 <div class="col-sm-3" style="margin-left:45px;">
-		  <div class="row" style="background-color:white;padding-left:3%;padding-top:2%">
-			 <div class="row" style="margin-left:35%;margin-top:10%">
-						   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5AUiRkFSOhVUE6W5OXRLkZpLMoNNqNadIR7Fa3p5_jlRU3UFD0Q"
-					 height="60" width="60"/>
-			 </div>
-			 <div class="row" style="margin-left:10%;margin-top:3%">
-				<h4><b>Track Time On Hubstaff</b></h4>
-				<h5 style="margin-left:5.2%"><font color="gray">Pay only for the hours worked</font> </h5>
-			 </div>
-			 <div class="row" style="margin-left:33%;margin-top:4%">
-				<button class="btn btn-info" > Sign Up </button><br/><br/>
-				<p><a href="#"><font color="#1ac6ff"> Learn More...</font></a></p>
-				 
-				
-			 </div>
-	      </div>
-		  <div class="row" style="margin-top:25px">
-		   <div class="row"style="border-bottom:1px solid lightgray;padding-left:4%;padding-top:2%">
-		      <h4> SIMILAR PROFILES</h4>
-		    </div>
-			<div class="row" style="margin-top:4%;margin-left:4%">
-			<div class="row">
-			  <div class="col-xs-2" style="margin-top:4%" >
-				<img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
-				  height='40' width='40' alt='Avatar'>
-			  </div>
-              <div class="col-xs-6" >
-			    <h5>Svetlana Anyukova </h5>
-			    <h6><font color="gray">UI/UX designer </font></h6>
-				<h5><font color="skyblue"> Epic Coders</font></h5>
-				
-			  </div>
-			  </div>
-			  <div class="row" style="margin-top:5%">
-			  <div class="col-xs-2" style="margin-top:4%" >
-				<img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
-				  height='40' width='40' alt='Avatar'>
-			  </div>
-              <div class="col-xs-6" >
-			    <h5>Svetlana Anyukova </h5>
-			    <h6><font color="gray">UI/UX designer </font></h6>
-				<h5><font color="skyblue"> Epic Coders</font></h5>
-				
-			  </div>
-			  </div>
-			
-			</div>
-		  
-		  </div>
-		  
-		 </div>
-	   
-	   </div>
-	   
-	
-	</div><!--main div-->
-	
-	
-	
-	
-	</body>
-	</html>
+  
+  <script>
+      // jQuery extend functions for popup
+(function($) {
+  $.fn.openPopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.show();
+    elem.find('.popup-content').addClass(settings.anim+'In');
+  }
+  
+  $.fn.closePopup = function( settings ) {
+    var elem = $(this);
+    // Establish our default settings
+    var settings = $.extend({
+      anim: 'fade'
+    }, settings);
+    elem.find('.popup-content').removeClass(settings.anim+'In').addClass(settings.anim+'Out');
+    
+    setTimeout(function(){
+        elem.hide();
+        elem.find('.popup-content').removeClass(settings.anim+'Out')
+      }, 500);
+  }
+    
+}(jQuery));
+
+// Click functions for popup
+$('.open-popup').click(function(){
+  $('#'+$(this).data('id')).openPopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+$('.close-popup').click(function(){
+  $('#'+$(this).data('id')).closePopup({
+    anim: (!$(this).attr('data-animation') || $(this).data('animation') == null) ? 'fade' : $(this).data('animation')
+  });
+});
+
+// To open/close the popup at any functions call the below
+// $('#popup_default').openPopup();
+// $('#popup_default').closePopup();
+
+
+  </script>
+  
+  </body>
+  
+  </html>
