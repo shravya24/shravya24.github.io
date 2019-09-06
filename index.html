@@ -35,7 +35,7 @@
 	width: 500px;
 	margin: -58px 0 0 -264px;
 	left: 50%;
-	top: 50%;
+	top: 40%;
 	z-index: 11;
   padding: 14px;
 }
@@ -182,64 +182,141 @@ a {
   
   </head>
   <body>
-    <div class="container " >
+    <div class="container" >
 	   <div class="row" >
 	     <div class="col-sm-8" style="padding:10px 10px 10px 30px;background-color:white;box-shadow:0px 10px 15px lightgray;margin:90px 2px 30px 20px;padding-bottom:20px">
 		    <h3>Documents Requests </h3>
-			<div class="row" style="padding:20px 10px 10px 10px">
-			  <div class="col-xs-4">
-			    <h4>Company </h4>
-				<div class="row" style="padding-top:15px">
-				  <div class="col-sm-3">
+			<div class="row">
+				<div class="col-xs-4">
+				  <h4>Company</h4>
+				</div>
+				<div class="col-xs-4">
+				 <h4>Recruiter</h4>
+				</div>
+				<div class="col-xs-4">
+				 <h4>Documents</h4>
+				</div>
+			</div>
+			<div class="row">
+			 <div class="col-xs-4">
+			     <div class="col-sm-3">
 				     <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" 
 			    class="img-circle" height="50" width="50" alt="Avatar">
 				  </div>
 				  <div class="col-sm-8">
 				    <h5> Dan Cartman </h5>
 				  </div>
-				</div>
-			  </div>
-			  <div class="col-xs-5">
-			    <h4>Recruiter </h4>
-				<div class="row" style="padding-top:15px">
-				  <h5> Drawing and Awesome Illustration</h5>
-				</div>
-			  </div>
-			  <div class="col-xs-3">
-			  <h4>Documents </h4>
-			   <div class="row" style="padding-top:15px">
+			 </div>
+			 <div class="col-xs-4">
+			     <h5> Drawing and Awesome Illustration</h5>
+			 </div>
+			 <div class="col-xs-4">
 			     <a href ="#" class="btn1 open-popup" data-id="popup_2" data-animation="scale">Upload </a>
-				 <div id="popup_2" class="popup" >
-					  <div class="popup-overlay"></div>
-					  <div class="popup-content" style="background-color:#f3f7ff">
-						<a href="#" class="close-popup" data-id="popup_2" data-animation="scale">&times;</a>
-						<h2>Files to be uploaded: </h2>
-						<ul>
-						  <li>File 1</li>
-						  <li>File 2</li>
-						  <li>File 3</li>
-						  <li>File 4</li>
-						</ul>  
-						<input type="file">
+				 
+			 </div>
+			
+			</div>	
+            <div class="row collapse" id ="more" name="more">
+			   <div class="row" style="padding:10px 10px 10px 15px">
+				 <div class="col-xs-4">
+					 <div class="col-sm-3">
+						 <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" 
+					class="img-circle" height="50" width="50" alt="Avatar">
 					  </div>
-					</div>
-				   </div>
+					  <div class="col-sm-8">
+						<h5> Dan Cartman </h5>
+					  </div>
+				 </div>
+				 <div class="col-xs-4">
+					 <h5> Drawing and Awesome Illustration</h5>
+				 </div>
+				 <div class="col-xs-4">
+					 <a href ="#" class="btn1 open-popup" data-id="popup_2" data-animation="scale">Upload </a>
+					 
+				 </div>
+			
+			   </div>
+			   <div class="row" style="padding:10px 10px 10px 15px">
+				 <div class="col-xs-4">
+					 <div class="col-sm-3">
+						 <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" 
+					class="img-circle" height="50" width="50" alt="Avatar">
+					  </div>
+					  <div class="col-sm-8">
+						<h5> Dan Cartman </h5>
+					  </div>
+				 </div>
+				 <div class="col-xs-4">
+					 <h5> Drawing and Awesome Illustration</h5>
+				 </div>
+				 <div class="col-xs-4">
+					 <a href ="#" class="btn1 open-popup" data-id="popup_2" data-animation="scale">Upload </a>
+					 
+				 </div>
+			
+			   </div>
+			   <div class="row" style="padding:10px 10px 10px 15px">
+				 <div class="col-xs-4">
+					 <div class="col-sm-3">
+						 <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" 
+					class="img-circle" height="50" width="50" alt="Avatar">
+					  </div>
+					  <div class="col-sm-8">
+						<h5> Dan Cartman </h5>
+					  </div>
+				 </div>
+				 <div class="col-xs-4">
+					 <h5> Drawing and Awesome Illustration</h5>
+				 </div>
+				 <div class="col-xs-4">
+					 <a href ="#" class="btn1 open-popup" data-id="popup_2" data-animation="scale">Upload </a>
+					 
+				 </div>
+			
+			   </div>
+			
+			  <div class="row" id="less_div" style="margin-right:15%;margin-top:30px">
+			    <a href="#" class="pull-right" id="show_less">Show Less</a>
+             </div>
 			  
-			  </div>
-			  <div class="row" style="margin-right:15%;margin-top:120px">
-			  <a href="#" class="pull-right">Show More</a>
-              </div>
-			  </div>
-		 
+			</div>
+         <div class="row" id="more_div" style="margin-right:15%;margin-top:30px">
+			  <a href="#" class="pull-right" id="show_more">Show More</a>
+         </div>			
 		 </div>
-	     <div class="col-sm-3" style="height:257px;box-shadow:0px 10px 15px lightgray;margin:90px 2px 30px 20px;">
+	     <div class="col-sm-3" style="height:225px;box-shadow:0px 10px 15px lightgray;margin:90px 2px 30px 20px;">
 		    <h3>Job Requests</h3>
 		 
 		 </div>
 	   </div>
 	</div>
+  <div id="popup_2" class="popup" >
+					  <div class="popup-overlay"></div>
+					  <div class="popup-content" style="border-radius:10px;padding:20px 20px 40px 40px">
+						<a href="#" class="close-popup" data-id="popup_2" data-animation="scale">&times;</a>
+						<h2>File to be uploaded: </h2><br/>
+						 <h5> Drawing and Awesome Illustration</h5>  
+						<input type="file">
+					  </div>
+					</div>
+ <script>
+    $("#show_more").click(function(){
   
-  <script>
+  $("#more").show();
+ $("#more_div").hide();
+ });
+ 
+ $("#show_less").click(function(){
+  
+  $("#more").hide();
+ $("#more_div").show();
+ });
+ 
+ </script>
+
+
+
+ <script>
       // jQuery extend functions for popup
 (function($) {
   $.fn.openPopup = function( settings ) {
