@@ -32,16 +32,28 @@
 .popup-content {
 	position: relative;
   background: #fff;
-	width: 600px;
+	width: 64%;
 	
 	
 	left: 20%;
 	top: 20%;
-	right:5%;
 	z-index: 11;
   
   
 }
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.popup-content{
+  position: relative;
+  background: #fff;
+	width: 100%;
+    z-index: 11;
+	top: 20%;
+}
+}
+
+
 .close-popup {
   display: inline-block;
   position: absolute;
