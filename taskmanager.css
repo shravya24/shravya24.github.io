@@ -138,6 +138,7 @@ display: inline-flex;float:right}
 
 @media only screen and (max-width: 600px) {
 .name{
+	margin-left:4px;
 	padding-left:26px;
 	
 	
