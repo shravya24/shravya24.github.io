@@ -100,3 +100,19 @@ border-left:3px solid blue;
    border: 1px solid transparent;
    border-radius: 0px 25px 25px 0px;
 }
+.forw{
+	background-color:#336699;
+	height:60px;
+	padding-top:20px;
+	padding-left:40px
+}
+
+@media only screen and (max-width: 600px) {
+.forw{
+	padding-top:20px;
+	padding-left:20px;
+	
+	
+}}
+
+
