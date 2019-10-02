@@ -1,0 +1,102 @@
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.list{ 
+ margin-top:20px;
+ color:gray;
+ list-style-type:none;
+ }
+ .list li {
+ margin-top:10px;}
+ 
+ 
+ .dropdown-btn{
+   padding-top:20px;
+   padding-bottom:20px;
+   padding-left:-20px;
+   background-color:white;
+   color:black;
+   border:1px solid #ebebe0;
+ }
+ .badge-notify{
+   background:red;
+   position:relative;
+   top: -22px;
+   left: -6px;
+   width:18px;
+}
+
+.list1 li a {
+margin-left:18px;
+}
+.drop{
+border:1px solid transparent;
+}
+.drop.active{
+border-left:3px solid blue;
+}
+.skills{
+  background-color:#ddd;
+  width:80%;
+  height:5px;
+  position:relative;
+ margin-left:30px;
+ margin-right:20px;
+}
+.title-bar{
+  position:absolute;
+  top:-50px;
+  margin:5px
+}
+.skills span {
+  float:right;
+  margin-top:-22px;
+  margin-right:5px;
+}
+
+.skillbar{
+  background-color:blue;
+  width:0px;
+  height:5px;
+}
+.example  {
+  padding: 12px 12px 12px 12px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 200px;
+  height:37px;
+  background: white;
+  border: 1px solid transparent;
+  
+}
+
+.example button {
+
+  float: left;
+  height:37px;
+  width: 40px;
+  padding: 10px;
+  background: #f1f1f1;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+   border: 1px solid transparent;
+}
+.example button:hover {
+  background: #f1f1f1;
+   border: 1px solid transparent;
+}
+
+.example::after {
+  content: "";
+  clear: both;
+  display: table;
+   border: 1px solid transparent;
+   border-radius: 0px 25px 25px 0px;
+}
