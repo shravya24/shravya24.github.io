@@ -135,9 +135,14 @@ display: inline-flex;float:right}
 }
  
 }}
-
+.name1{
+	margin-left:14px;
+	
+	
+	
+}
 @media only screen and (max-width: 600px) {
-.name{
+.name1{
 	margin-left:14px;
 	
 	
