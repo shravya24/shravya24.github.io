@@ -1,78 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>web page2</title>
+<title>Profile</title>
  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <style type="text/css">
-    .txt li a{
-	font-size:14px;
-	}
-	#bg {
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type="text/css">
+.avatar {
+ 
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #003375;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
   
 }
-#bg img {
-   
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
- 
-  min-width: 50%;
- 
+
+.topnav a:hover {
+  border-bottom: 2px solid #1ac6ff;
+  color:#1ac6ff;
 }
 
-
-
-[class$="-legend"] {
-  list-style: none;
-  cursor: pointer;
-  padding-left: 0;
-  margin-left:20px;
+.topnav a.active {
+  border-bottom: 2px solid #1ac6ff;
 }
-
-[class$="-legend"] li {
+.label {
   display: inline-block;
-  padding: 0 5px;
-  font-size:12px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 4px 8px;
+  border-radius: 26px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFF;
+   margin-right:10px;
+  margin-bottom:10px
 }
 
-[class$="-legend"] li.hidden {
-  text-decoration: line-through;
+.label.label-outlined {
+   border-width: 1px;
+  border-style: solid;
+  border-color:gray;
+  color: black;
+ 
+}
+.dropdown:hover{
+background-color:white;
+}
+.dropdown.active{
+background-color:white;
 }
 
-[class$="-legend"] li span {
-  border-radius: 5px;
-  display: inline-block;
-  height: 10px;
-  margin-left:20px;
-  margin-right: 10px;
-  width: 10px;
-  margin-top:15px;
-  
-}
-.list1 li {
-font-size:12px;
-margin-top:13px;
-}
 
 @media only screen and (max-width: 600px) {
- .chart{
- margin-top:30px;
- }
-}
+  .new {
+	margin-left:30px;
+   
 	
-  </style>
-  
-  </head>
-  
-  <body>
-    <nav class="navbar navbar-inverse" style="background-color:white;border-style:none;padding-top:15px">
+}
+}
+@media only screen and (max-width: 600px) {
+  .new1 {
+	margin-top:90px;
+   
+	
+}
+}
+
+.btn1{
+color:white;margin-left:5px;width:100px;
+
+}
+@media only screen and (max-width: 600px) {
+.btn1{
+width:80px;
+}
+
+}
+
+.btn2{
+border: 1px solid #1ac6ff;color:#1ac6ff;margin-left:15px;background-color:white;width:100px;
+
+}
+@media only screen and (max-width: 600px) {
+.btn2{
+width:80px;
+}
+
+}
+
+.div1{
+
+background-color:white;
+margin-left:45px;
+margin-top:15px;
+width:838px;
+}
+@media only screen and (max-width: 600px) {
+.div1{
+  margin-left:2px;
+  width:400px;
+}
+}
+.img1{
+height:100px;
+width:100px;
+}
+
+</style>	
+</head>
+	<body>
+		   <nav class="navbar navbar-inverse" style="background-color:white;border-style:none;padding-top:15px">
 	  <div class="container-fluid">
 		<div class="navbar-header">
 		 
@@ -82,16 +133,22 @@ margin-top:13px;
         <span class="icon-bar " style="border:1px solid black" ></span>                        
       </button>
       
-		  <a class="navbar-brand" href="#" style="color:black;margin-left:20px;font-size:22px"><b>GoJobs</b></a>
+		  <a class="navbar-brand" href="#">WebSitelogo</a>
 		</div>
 		
-  <ul class="list-inline nav nav-pills navbar-right collapse navbar-collapse txt" id="myNavbar" style="margin-right:15px">
-    <li ><a href="#">Find a Job</a></li>
-    <li><a href="#">Hire a Candidate</a></li>
-    <li><a href="#">About </a></li>
-    <li><a href="#">How it works</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#" class="btn btn-info" role="button">Sign In</a></li>
+		<ul class="list-inline nav nav-pills navbar-right  collapse navbar-collapse" id="myNavbar">
+    <li ><a href="#">HOW IT WORKS</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">BROWSE <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1-1</a></li>
+        <li><a href="#">Submenu 1-2</a></li>
+        <li><a href="#">Submenu 1-3</a></li>                        
+      </ul>
+    </li>
+    <li><a href="#">SEARCH</a></li>
+    <li><a href="#">START A PROFILE</a></li>
+    <li><a href="#">ADD YOUR AGENCY</a></li>
   </ul>
 	 
 	 
@@ -100,401 +157,99 @@ margin-top:13px;
 		
 	</div>
 	</nav>
-  <div class="container-fluid" >
-  <div class="row" style="background-color:skyblue;padding-bottom:100px">
-    <div class="row" >
-	   <div class="col-sm-12" id="bg" >
-	     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqoTX_jHgJlKW_4JhN6xQuGPbyc9gmwSVFhCBg5nQ6GtZuMWjIOg" alt="image" height="400px" width="100%">
-	   </div>
-	</div>
-    <div class="row" style="z-index:-1;">
-	   <div class="col-sm-10" style="background-color:white;margin-left:9%;margin-right:10%;margin-top:-10%;padding:10px 10px 10px 10px">
-	        <div class="row" style="padding:20px 20px 20px 20px">
-			  <div class="col-sm-2"style="margin-bottom:20px">
-			     
-			  <img src="https://image.flaticon.com/teams/slug/google.jpg" alt="google" height="150px" width="150px" style="border:1px solid lightgray;">
+	<div class="container-fluid" style="background-color:#f0f3f4">
+	  <p style="margin-left:5%;margin-top:25px"><a href="#"><font color="#003399"><span style="margin-top:2%"><i class="material-icons" style="font-size:18px;">keyboard_arrow_left</i></span> Back to search results</font>  </a></p>
+	   <div class="row" style="background-color:white;margin-left:5%;margin-right:5%;margin-top:3%">
+	      <div class="col-sm-7" style="color:#003375;padding-left:3%;padding-top:1%;border-right:1px solid lightgray;margin-top:2%;margin-bottom:50px">
+			  <div class="col-xs-3" style="margin-top:2%">
+				<img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle img1'			  
+				  alt='Avatar'>
 			  </div>
-			  <div class="col-sm-4" style="margin-bottom:20px">
-			     <h3 style="padding-left:25px;margin-top:-10px"> Google Inc.</h3>
-				 <div class="row">
-				    <Div class="col-xs-6" style="padding-left:40px;color:#808076">
-					  <h5>Headquarters </h5>
-					  <h5>Company Size </h5>
-					</div>
-					<Div class="col-xs-6" style="color:#243762">
-					   <h5><b> Mountain View, CA </h5>
-					   <h5>10,000+ employees</b> </h5> 
-					</div>
-				 
-				 </div>
-				 <div class="row" style="margin-left:25px;margin-top:30px;color:#808076;font-size:13px" >
-				    <p>1600 Amphitheatre Parkway <br/>
-					 Mountain View,CA <br/>
-					 Phone : +1 650-253-0000 </p>
-				 
-				 </div>
-			  
-			  </div>
-			  <div class="col-sm-4" style="margin-top:20px;margin-bottom:20px">
-			     <div class="col-xs-6">
-				    <h5 style="color:#bfbfbf">Industry:</h5>
-					<h5 style="color:#808076">Internet</h5><br/>
-					<h5 style="color:#bfbfbf">Founded:</h5>
-					<h5 style="color:#808076">1998</h5>
-				 
-				 </div>
-				 <div class="col-xs-6">
-				     <h5 style="color:#bfbfbf">Type:</h5>
-					<h5 style="color:#808076">Public Company</h5><br/>
-					<h5 style="color:#bfbfbf">Website:</h5>
-					<h5 style="color:#808076">https://google.com</h5>
-				 
-				 </div>
-			  
-			  
-			  </div>
-			  <div class="col-sm-2">
-			     <button class="btn btn-success" style="width:150px;border-radius:0px;height:40px;margin-right:10px"><b>See All Jobs </b></button>
-			  </div>
-			
-			</div>
-	   </div>
-	</div>
-    <div class="row" style="margin-top:40px;">
-	   <div class="col-sm-10" style="margin-left:9%;margin-right:10%;">
-	     <div class="row">
-		    <div class="col-sm-8" style="background-color:white;">
-			<div class="row" style="border-bottom:1px solid #ebebe0;padding:20px 30px 30px 30px">
-			   <h5 style="color:#243762"><b>About US </b></h5>
-			   <div class="row" style="padding:10px 40px 10px 40px;">
-			     <h6 style="line-height:1.6;color:#808076">The Google company was officially launched in 1998 by Larry Page and Sergey Brin to market Google Search, which has become
-				 the most used web-based search engine. Larry Page and Sergey Brin, students at Stanford University in California, developed a search
-				 algorithm at first known as "BackRub" in 1996, with the help of Scott Hassan and Alan Steremberg. The search engine soon proved successful
-				 and the expanding company moved several times, finally settling at Mountain View in 2003. This marked a phase of rapid growth, with the company 
-				 making its initial public offering in 2004 and quickly becoming one of the world's largest media companies. The company launched Google News in 2002, 
-				 Gmail in 2004, Google Maps in 2005, Google Chrome in 2008, and the social network known as Google+ in 2011 (which was shut down in April 2019), 
-				 in addition to many other products. In 2015, Google became the main subsidiary of the holding company Alphabet Inc.
-			   </h6>
-			   </div>
-			   
-			   <div class="row" style="">
-			      <h5 style="margin-left:16px;color:#808076"><b>Specialities</b> </h5>
-				   <h6 style="margin-left:26px;color:#808076">search, ads ,mobile, android , online, apps , videos , machine learning , virtual reality </h6>
-				  
-			   </div>
-			   </div>
-			   <div class="row" style="padding:20px 30px 30px 30px;border-bottom:1px solid #ebebe0;color:#808076">
-			    <h5 style="color:#808076"><b> Affiliated Companies</b> </h5>
-				<div class="row" style="margin-top:15px">
-				  <div class="col-sm-6">
-				    <div class="row">
-					   <div class="col-xs-3">
-					   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaw1BBLMRuWx_z-K7EDOR7ZZjDumlniAcaYqwjC1vSEOMfSKCf"
-					    height="60" width="60"/>					     
-					   </div>
-					   <div class="col-xs-7">
-					     <h5 style="line-height:1.2"><b>Google, Social Marketing Tools</b><br/>
-					    <small>Internet <br/>
-					     86,000 followers</small> </h5>
-						 
-					   </div>
-					
-					</div>
-					<div class="row">
-					   <div class="col-xs-3">
-					      <img src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1462990279/qdkop9ymyc1i3drbzfvv.png"
-						  height="40" width="60">
-						  
-					   
-					   </div>
-					   <div class="col-xs-5">
-					     <h5 style="line-height:1.2"><b>Nest</b><br/>
-					    <small>Consumer Electronics <br/>
-					     46,602 followers</small> </h5>
-						 
-					   </div>
-					
-					</div>
-					<div class="row">
-					   <div class="col-xs-3">
-					   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXcCtDhG2drdgUFU1CrgAb4S14uMiDy3zx87YO3lpmo3H-tgO" height="60" width="60">
-					   
-					   </div>
-					   <div class="col-xs-8">
-					     <h5 style="line-height:1.2"><b>X, the moonshot factory</b><br/>
-					    <small>Research <br/>
-					     6,000 followers</small> </h5>
-						 
-					   </div>
-					
-					</div>
-				  
-				  </div>
-				  <div class="col-sm-6">
-				     <div class="row">
-					   <div class="col-xs-3">
-					   <img src="https://media.licdn.com/dms/image/C4E0BAQG_VLbxyJcP8A/company-logo_200_200/0?e=2159024400&v=beta&t=pr4zUjRI1T6k9x__pffiT3urizhP9vntTwDs6IZNUzc"
-					   width="60" height="60">
-					   
-					   </div>
-					   <div class="col-xs-8">
-					     <h5 style="line-height:1.2"><b>Adometry by Google Marketing<br/>
-					    <small>Advertising <br/>
-					     4,000 followers</small> </h5>
-						 
-					   </div>
-					
-					</div>
-					<div class="row">
-					   <div class="col-xs-3">
-					    <img src="https://image.shutterstock.com/image-photo/kiev-ukraine-may-26-2015-260nw-281716448.jpg" width="50" height="60">
-					   
-					   </div>
-					   <div class="col-xs-5">
-					     <h5 style="line-height:1.2"><b>Youtube</b><br/>
-					    <small>Internet <br/>
-					     233,000 followers</small> </h5>
-						 
-					   </div>
-					
-					</div>
-				  
-				  </div>
-				
+              <div class="col-xs-6">
+			  <div class="row new">
+					<h3 >Akash Sharma </h3>
+					<h6><font color="gray">Full Stack Web Developer </font></h6>
+					<h5><font color="skyblue"> Epic Coders</font></h5>
 				</div>
 				
 			  </div>
-			   <div class="row" style="padding:20px 30px 30px 30px;color:#808076">
-			     <h5><b>Organizations our employees support</b> </h5>
-			      <div class="row"  class="row" style="margin-top:25px">
-				    <div class="col-sm-6">
-					   <div class="row">
-					     <div class="col-xs-2">
-						   <img src="https://assets.2ser.com/wp-content/aws/uploads/2018/07/26204424/UNICEF_FLAG.png" width="40" height="40">
-						 
-						 </div>
-						 <div class="col-xs-5" style="padding-left:20px">
-						    <h5 style="line-height:1.2"><b>UNICEF</b><br/>
-							<small>365,719 followers </small></h5>
-						 
-						 </div>
-					   </div>
-					   <div class="row" style="margin-top:15px">
-					     <div class="col-xs-2">
-						 <img src="data:image/png;base64,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"
-						 width="40" height="40">
-						 
-						 
-						 </div>
-						 <div class="col-xs-5" style="padding-left:20px">
-						    <h5 style="line-height:1.2"><b>WWF</b><br/>
-							<small>90,000 followers </small></h5>
-						 
-						 </div>
-					   </div>
-					   <div class="row" style="margin-top:15px">
-					     <div class="col-xs-2">
-						  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThw9HZUUE-pYc6VM0miRbqP9nlFtMzRYUtp_sdt_xnwAatzEkgoQ"
-						   height="40" width="40">
-						 
-						 </div>
-						 <div class="col-xs-7" style="padding-left:20px">
-						    <h5  style="line-height:1.2"><b>American Red Cross</b><br/>
-							<small>365719 followers </small></h5>
-						 
-						 </div>
-					   </div>
-					
-					</div>
-					<div class="col-sm-6">
-					   <div class="row">
-					     <div class="col-xs-2">
-						 <img src="https://cached.imagescaler.hbpl.co.uk/resize/scaleWidth/580/cached.offlinehbpl.hbpl.co.uk/news/NST/amnesty-20190429112652107.jpg"
-						  height="40" width="40">
-						 </div>
-						 <div class="col-xs-8" style="padding-left:20px">
-						    <h5 style="line-height:1.2"><b>Amnesty International</b><br/>
-							<small>365719 followers </small></h5>
-						 
-						 </div>
-					   </div>
-					   <div class="row">
-					     <div class="col-xs-2">
-						 <img src="https://smartmonkeywebworks.com/wp-content/uploads/2017/12/eff-logo_v2.png"
-						  height="37" width="37">
-						 </div>
-						 <div class="col-xs-9" style="padding-left:20px">
-						    <h5 style="line-height:1.2"><b>Electronic Frontier Foundation</b><br/>
-							<small>365719 followers </small></h5>
-						 
-						 </div>
-					   </div>
-					</div>
-				  
-				  </div>
-			   </div>
-			   
-			</div>
-			<div class="col-sm-3 chart" style="background-color:white;margin-left:40px;width:305px;color:#808076">
-			 <div class="row " style="border-bottom:1px solid lightgray;padding:30px 10px 30px 10px">
-			   <h6 class="text-center" style="margin-bottom:30px"><b>Languages We speak </b></h5>
-			      <div class="row">
-  						  <div>
- 							<canvas id="myChart"></canvas>
-							<div id="legend" style="padding:10px 30px 10px 40px;margin-top:20px"></div>
-						  </div>
-						</div>
- 
+      		  
+		  </div>
+		  <div class="col-sm-5 " style="padding-left:2%;padding-top:1%;margin-top:2%;margin-bottom:2%">
+		    <div class="row new1" style="padding-left:10px">
+		     <div class="col-xs-5">
+			    <h5><b>Availability:</b></h5>
+			    <h5><b>Age:</b></h5>
+			    <h5><b>Location:</b></h5>
+			    <h5><b>Years Experience:</b></h5>
+				
+			 
 			 </div>
-			 <script>
-			    var ctx = document.getElementById("myChart").getContext('2d');
-var chart = new Chart(ctx, {
-  type: 'doughnut',
-  
-  data: {
-    
-    labels: ["English", "Spanish", "French", "German", "Chinese"],
-    datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-        "#e74c3c",
-        "#34495e"
-      ],
-      data: [96, 20,17, 14, 6]
-    }]
-  },
-  options: {
-    cutoutPercentage: 80,
-    legend: {
-      display: false
-    },
-  }
-});
-
-var myLegendContainer = document.getElementById("legend");
-// generate HTML legend
-myLegendContainer.innerHTML = chart.generateLegend();
-// bind onClick event to all LI-tags of the legend
-var legendItems = myLegendContainer.getElementsByTagName('li');
-for (var i = 0; i < legendItems.length; i += 1) {
-  legendItems[i].addEventListener("click", legendClickCallback, false);
-}
-
-
-
-			 </script>
-			<div class="row " style="border-bottom:1px solid lightgray;padding:30px 10px 30px 10px">
-			   <h6 class="text-center" style="margin-bottom:30px"><b>Causes our employees care about </b></h5>
-			        <div class="row">
-  						  <div>
- 							<canvas id="myChart1"></canvas>
-							<div id="legend1" style="padding:10px 10px 10px 10px;margin-top:20px"></div>
-						  </div>
-						</div>
-			      
-			</div>
-						 <script>
-			    var ctx = document.getElementById("myChart1").getContext('2d');
-var chart = new Chart(ctx, {
-  type: 'doughnut',
-  
-  data: {
-    
-    labels: ["Education", "Human Rights", "Science & Technology", "Children", "Environment"],
-    datasets: [{
-      backgroundColor: [
-        "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-        "#e74c3c",
-        "#34495e"
-      ],
-      data: [76, 65, 50, 45, 45]
-    }]
-  },
-  options: {
-    cutoutPercentage: 80,
-    legend: {
-      display: false
-    },
-  }
-});
-
-var myLegendContainer = document.getElementById("legend1");
-// generate HTML legend
-myLegendContainer.innerHTML = chart.generateLegend();
-// bind onClick event to all LI-tags of the legend
-var legendItems = myLegendContainer.getElementsByTagName('li');
-for (var i = 0; i < legendItems.length; i += 1) {
-  legendItems[i].addEventListener("click", legendClickCallback, false);
-}
-
-
-
-			 </script>
+			 <div class="col-xs-6">
+			    <h5><font color="#585858"> Full Time(40hr/week)</font></h5>
+			    <h5><font color="#585858"> 32</font></h5>
+			    <h5><font color="#585858"> Hyderabad</font></h5>
+			    <h5><font color="#585858"> 2</font></h5>
+			 
+			 </div>
+		    </div>
 			
-			
-		   </div>
-		 </div>
+		  </div>
+	    
+	   </div>
+	   <div class="row topnav" style="color:#003399; margin-left:5%;margin-right:5%;margin-top:30px;border-bottom:2px solid lightgray">
+	    
+			  <a href="#home">Profile</a>
+			  <a href="#news">CV/Resume</a>
+			 
 	   
 	   </div>
-	</div>
-	</div>
-  <div class="footer" style="height:200px;color:#808076">
-  <div class="row"style="padding-left:20px">
-    <div class="col-sm-4 " style="padding:20px 50px 20px 100px">
-	  <div class="row">
-	       <h4 style="color:black;margin-bottom:25px"><b>GoJobs</b></h4>
-		   <h6 style="line-height:1.6">The purpose of our existence is to help tech-companies recruiting IT talents in the world especially programmers.</h6>
-	  </div>
-	  <div class="row" style="margin-top:25px"> 
-	     <button class="btn" style="background-color:white;border:2px solid lightgray;color:green;border-radius:0px;width:160px;height:45px">ASK QUESTION </BUTTON>
-	  </div>
-	</div>
-	<div class="col-sm-2"style="padding:20px 30px 20px 40px">
-	   <h5 style="margin-left:42px;color:black;margin-bottom:25px"><b>INFO</b></h5>
-	   <ul class="list1" style="list-style-type:none">
-	     <li>Support </li>
-	     <li>Developers </li>
-	     <li>Service</li>
-	     <li>Get Started</li>
-		 
-	   </ul>
 	   
-	</div>
-	<div class="col-sm-2" style="padding:20px 30px 20px 40px">
-	 <h5 style="margin-left:36px;color:black;margin-bottom:25px"><b>COMPANY</b> </h5>
-	 <ul style="list-style-type:none" class="list1">
-	   <li>Press Releases </li>
-	   <li>Mission </li>
-	   <li>Strategy </li>
-	   <li>Work </li>
-	   
-	 
-	 </ul>
-	</div>
-	<div class="col-sm-4" style="padding:20px 50px 20px 100px">
-	  <h5 style="color:black;margin-bottom:25px"><b>CONTACT</h5>
-	  <h6 style="line-height:1.6">Feel free to get in touch with us via phone or send us a message</h6>
-	  <ul class="list-inline list1" >
-	    <li>+62 000 812-1234</li>
-	    <li>help@gojobs.com</li>
+	   <div class="row" style="margin-left:5%;margin-right:5%;margin-top:2%;padding-bottom:30px">
+	     <div class="col-sm-3" style="background-color:white;padding-left:3%;padding-top:2%;padding-bottom:20px;margin-top:15px">
+		   <h4><b>WEBSITES</b></h4><br/>
+		    <p style="margin-bottom:15px;"><a href="#"><font color="black"><i class="material-icons" style="font-size:20px;color:#003375;">group_work</i>  Website</font></a></p>
+		    <p style="margin-bottom:15px;"><a href="#"><font color="black"><i class="fa fa-file-text" style="font-size:20px;color:#003375;"></i> Blog</font></a></p>
+		    <p style="margin-bottom:15px;"><a href="#"><font color="black"><span class="glyphicon glyphicon-folder-close"style="font-size:18px;color:#003375;"></span>  Portfolio</font></a></p>
+		    
+		 </div>
+		 <div class="col-sm-8 div1">
+		  <div class="row" style="padding-left:2%;padding-top:2%;padding-bottom:2%;border-bottom:1px solid lightgray;margin:0px 10px 10px 10px">
+		    <br/><h5><b> ABOUT </b></h5><br/>
+			<p style="font-size:13px; line-height: 1.6;">Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
+			team can track time from pretty much any device.Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
+			team can track time from pretty much any device.Once upon a time, you had to stop working just to record what you were working on. Now, anyone on your
+			team can track time from pretty much any device.</p>
+          </div>
+		  <div class="row" style="padding-left:2%;padding-top:2%;border-bottom:1px solid lightgray;margin:0px 10px 10px 10px">
+		    <h5><b>SKILLS</b></h5><br/>
+		     <div class="row" style="margin-bottom:3%;padding-left:2%;">
+			     <div class="label label-outlined">UX</div> <div class="label label-outlined">Sketch</div><div class="label label-outlined">Java</div><div class="label label-outlined">Python</div>
+				 <div class="label label-outlined">Photoshop</div><div class="label label-outlined">JavaScript</div><div class="label label-outlined">Android</div><div class="label label-outlined">IOS</div>
+				 <div class="label label-outlined">Python</div><div class="label label-outlined">Linux</div><div class="label label-outlined">PHP</div>
+				 <div class="label label-outlined">Illustrator</div><div class="label label-outlined">UX</div><div class="label label-outlined">Android</div> <div class="label label-outlined">Java</div>
+				 
+			 </div>
+		  </div>
+		  <div class="row" style="padding-left:2%;padding-top:2%;margin:0px 10px 10px 10px">
+		     <h5><b>LANGUAGES</b></h5><br/>
+             <ul class="list-inline">
+			    <li> English</li>
+				<li>German</li>
+				<li> French</li>
+			 
+              </ul>
+          </div>		  
+		 </div>
 		
-	  
-	  </ul>
-	</div>
+	   
+	   </div>
+	   
+	
+	</div><!--main div-->
 	
 	
 	
-  </div>
-  </div>
-  </div><!--container-->
-  </body>
-  
-  </html>
+	
+	</body>
+	</html>
