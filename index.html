@@ -3,299 +3,576 @@
 <head>
 <title>Task Manager</title>
  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="taskmanager.css">
-	<script src="tasks.js"></script>
+	<style type="text/css">
+	.lists li a{
+	    margin-left:24px;
+	    font-size:16px;
+	}
+	.lists a {
+  float: left;
+  display: block;
+  color: #003375;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+.lists a.active{
+border-bottom: 2px solid #1ac6ff;
+  color:#1ac6ff;
+} 
+.lists a:hover {
+  border-bottom: 2px solid #1ac6ff;
+  color:#1ac6ff;
+}
+
+.lists a.active {
+  border-bottom: 2px solid #1ac6ff;
+}  
+
+.menubar{
+margin-top:45px;
+list-style-type:none;
+border-bottom:1px solid #e6e6e6;
+}
+	.menubar li{
+	margin-bottom:30px;
+	
+	}
+	.menubar li a{
+	color:gray;
+	
+	}
+	.invite li div{
+	padding:8px 10px 8px 10px;
+	width:84%;
+	background-color:#435970;
+	margin-top:10px;
+	color:#e6e6e6;
+	} 
+	.invite li div:hover{
+	background-color:white;
+	color:blue;
+	}
+	.fa {
+	color:lightgray;
+	margin-right:15px;
+	}
+	.menubar1 li a{
+	color:gray;
+	}
+	
+	.lastcol{
+	padding-left:50px;}
+@media only screen and (max-width: 600px) {
+  .lastcol {
+	padding-left:20px;
+	margin-top:30px;
+}
+}
+	</style>
 </head>
 <body>
-	  <div class="container-fluid">
-	    <div class="row">
-		  <div class="col-md-3" style="border-right:1px solid #ebebe0;border-bottom:1px solid #ebebe0;"><!-- first column-->
-		    <div class="row" style="padding:20px 10px 17px 10px;text-align:center;color:gray;border:1px solid #ebebe0;">
-		      <h4> TASK MANAGER </h4>
-		     </div>
-			 <div class="row" style="border:1px solid #ebebe0 ">
-				 <div class="row" style="padding-left:45%;padding-top:30px">
-					<img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="60" width="60" alt="Avatar" >
-				 </div>
-				 <div class="row" style="text-align:center">
-					<p style="font-size:16px;margin-top:15px"><b>Natalie Smith </b><br/> 
-					<small><font color="gray">nataliesmith@gmail.com</font></small></p>
-				 </div>
-				 <div class="row text-center" style="margin-top:20px;padding:5px 20px 20px 20px">
-				    <ul class="list-inline list1">
-					  <li><a href="#"><i class="material-icons">&#xe8b8;</i></a></li>
-					  <li><a href="#" ><i class="material-icons">&#xe554;</i><span class="badge badge-notify">3</span></a></li>
-					  <li><a href="#"> <i class="material-icons" style="font-size:26px">&#xe7f4;</i><span class="badge badge-notify">3</span></a></li>
-					</ul>
-				 
-				 </div>
-				 
-				  <div class="skills" data-percent="15%">
-            <div class="title-bar">
-              
-            </div>
-            <span>15%</span>
-            <div class="skillbar"></div>  
+<nav class="navbar navbar-inverse visible-xs" style="background-color:white;border:1px solid lightgray">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+        <span class="icon-bar" style="border:1px solid gray"></span>
+        <span class="icon-bar" style="border:1px solid gray"></span>
+        <span class="icon-bar" style="border:1px solid gray"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
     </div>
-	<script>
-	   $(document).ready(function(){
-  
-      startAnimation();
-      
-   
-
-     function startAnimation(){
-      jQuery('.skills').each(function(){
-
-        jQuery(this).find('.skillbar').animate({
-          width:jQuery(this).attr('data-percent')
-        },6000); 
+    <div class="collapse navbar-collapse" id="myNavbar1">
+      <ul class="nav navbar-nav">
+        <li ><input type="text" placeholder="   Search people, team projects      " style="width:350px;height:40px;margin-top:14px;border-radius:25px;border:1px solid lightgray"></li>
+      <li style="margin-top:10px"> <ul class="list-inline"> <li><button class="btn" style="background-color:white;color:blue;box-shadow:0px 4px 4px lightgray"> Create project </button>
+		   </li>
+        <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+        </ul></li>
         
-    });
-     }                
-});
-	</script>
-	
-	
-	
-				 
-				 <div class="row text-center" style="margin-left:40px;padding:20px 20px 30px 20px">
-				   <div class="col-xs-4">
-				      <h4 style="line-height:1.4"><b>12</b></h4>
-					  <h5>Completed</h5>
-				   </div>
-				   <div class="col-xs-3">
-				      <h4 style="line-height:1.4"><b>22</b></h4>
-					  <h5>To Do</h5>
-				   </div>
-				   <div class="col-xs-3">
-				     <h4 style="line-height:1.4"><b>243</b></h4>
-					  <h5>All</h5>
-				   </div>
-				 </div>
-			 </div>
-			 <div class="row" style="margin-top:40px;border-bottom:1px solid #ebebe0;padding:15px 15px 25px 15px">
-			    <p style="margin-left:55px;font-size:15px"><b>PROJECTS</b></p>
-				<ul class="list" style="margin-left:15px">
-				<li>Marketing</li>
-				<li>Design</li>
-				<li>Development</li>
-				<li>Management</li>
-			 </div>
-			 <div class="row" style="margin-left:40px;padding-top:20px;margin-bottom:20px">
-			    <h5 style="margin-left:10px"><b>TEAM </b> </h5>
-				<ul class="list-inline list1"style="margin-top:20px;margin-left:6px">
-				  <li><img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" ></li>
-				   <li><img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				   height="35" width="35"alt="Avatar" ></li>
-				   <li><img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" ></li>
-				  <li><img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				   height="35" width="35" alt="Avatar" ></li>
-				</ul>
-			 </div>
-		  </div><!-- first column-->
-		  <div class="col-md-3" style=" border-bottom:1px solid #ebebe0;"><!-- second column-->
-		     <div class="row" style="padding:20px 10px 20px 10px">
-			    <input type="text" class="example" placeholder="Search.." name="search2" >
- 
-			 </div>
-			 <div class="row" style="border:1px solid #ebebe0" >
-				<button class="dropdown-btn btn-block drop" style="padding:25px 10px 25px 10px"><b> MARKETING</b>
-				<i class="material-icons pull-right" style="font-size:24px;color:black">keyboard_arrow_down</i>
-					 </button>
-			    <div class="dropdown-container" style="overflow-y:scroll;max-height:560px">
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   <div class="row" style="padding:20px 10px 20px 0px;background-color:#f0f3f5;margin-left:2px;margin-right:2px;border-bottom:1px solid lightgray">
-				      <div class="col-xs-1" style="padding-left:27px ;">
-					   <div class="row text-center" style="border-radius:50%;border:3px solid lightgray;height:47px;width:47px;padding-top:6px ">
-					    <img src="https://cdn1.iconfinder.com/data/icons/line-essentials-3/20/115-512.png" 
-						height="28" width="28">	
-                       </div>
-						</div>
-					  <div class="col-xs-9" style="padding-left:47px">
-					     <h5><b>Creating Adwords Campaigning </b></h5>
-						 <h5><font color="gray">25 Feb 2018 </font></h5>
-					  </div>
-					  <div class="col-xs-1" style="padding-left:7px">
-					    <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" >
-					  </div>
-				   </div>
-				   
-				   
-				   
-				   
-						
-			  </div>
-			 </div>
-			 <div class="row">
-			    <button class="btn btn-info" style="margin-left:24%;margin-top:10%;margin-bottom:10%"> Add Task </button> 
-			 </div>
-		  </div>
-		  <div class="col-md-6" style="border-bottom:1px solid #ebebe0;">
-		    <div class="row"style="padding:10px 10px 8px 10px;border-bottom:1px solid lightgray">
-			  <h3 style="margin-left:20%"><b> All tasks <i class="material-icons" style="font-size:24px;color:black">keyboard_arrow_down</i> </b></h3>
-			</div>
-			<div class="row" style="padding:25px 10px 13px 10px;border-bottom:1px solid lightgray">
-			  <div class="col-xs-2">
-			  <img src="https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750" class="img-circle" 
-				  height="35" width="35" alt="Avatar" style="margin-right:6px">
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="navbar navbar-inverse hidden-xs" style="background-color:white;border:1px solid transparent">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar1">
+      <ul class="list-inline nav navbar-nav">
+        <li ><input type="text" placeholder="   Search people, team projects      " style="width:350px;height:40px;margin-top:14px;border-radius:25px;border:1px solid lightgray"></li>
+        <li style="margin-left:620px;margin-top:20px">
+		    <button class="btn pull-right" style="background-color:white;color:blue;float:right;box-shadow:0px 4px 4px lightgray"> Create project </button>
+		   
+		</li>
+		<li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'style="margin-left:30px;margin-top:20px"></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<nav class="navbar navbar-inverse visible-xs">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul   class="nav navbar-nav">
+       <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0e4;</i>Dashboard</a>  </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0f3;</i>Notifications</a> </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0c0;</i>Teams  </a></li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf15b;</i>Projects </a> </li>
+		    <li><a href="#"><i style="font-size:20px" class="fa">&#xf02e;</i> Bookmarks </a> </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf02e;</i>Chats  </a></li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf007;</i>Profile  </a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+   <div  class="row  text-center" style="background-color:#f1ffe8;box-shadow:10px 8px 10px lightgray;padding-top:10px">
+     <ul id="menu1"  class="list-inline lists">
+	     <li ><a href="#" data-page="all">All</a></li>
+        <li><a href="#" data-page="teams">Teams</a></li>
+        <li><a href="#" data-page="projects">Projects</a></li>
+        <li><a href="#" data-page="bookmarks">Bookmarks</a></li>
+	   
+	 </ul>
+   
+   
+   </div>
+   <div class="row" style="background-color:#f1f3f4;margin-top:20px;padding:20px 10px 10px 10px">
+       <div class="col-sm-3 hidden-xs" >
+	      <ul class="menubar">
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0e4;</i>Dashboard</a>  </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0f3;</i>Notifications</a> </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf0c0;</i>Teams  </a></li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf15b;</i>Projects </a> </li>
+		    <li><a href="#"><i style="font-size:20px" class="fa">&#xf02e;</i> Bookmarks </a> </li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf02e;</i>Chats  </a></li>
+		    <li> <a href="#"><i style="font-size:20px" class="fa">&#xf007;</i>Profile  </a></li>
+	   
+	      </ul>
+		  <ul class="menubar1" style="list-style-type:none;">
+		    <li style="margin-bottom:20px"> <a href="#"> <i style="font-size:20px" class="fa">&#xf013;</i>Settings </a> </li>
+		    <li style="margin-bottom:20px"> <a href="#"><i style="font-size:20px" class="fa">&#xf059;</i> Profile</a> </li>
+		</ul>	
+	   </div>
+	   
+	  
+	   
+	   <div id="pages" class="col-sm-6">  
+	      <div class="page" id="all"  data-page="all">
+	       <div class="row" style="background-color:white;box-shadow:0px 10px 10px lightgray;padding-left:18px;padding-right:18px">
+		      <div class="row">
+			    <div class="col-xs-2" style="margin-right:10px">
+			     <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='50' width='50' alt='Avatar'style="margin-left:30px;margin-top:20px">
 			   </div>
-			   <div class="col-xs-4 " >
-			     <h5 class="name1"><b>Natalie Smith</b></h5>
-			   </div>
-			   <div class="col-sm-6 ">
-			     <ul class="list-inline list11" >
-				    <li ><a href="#"><i class="material-icons" style="font-size:24px">&#xe872;</i></a></li>
-					<li ><a href="#"><i class="material-icons" style="font-size:24px">&#xe7fd;</i></a></li>
-					<li ><a href="#"><i class="material-icons" style="font-size:24px">local_offer</i></a></li>
-					
-				 </ul>
-				 
+			   <div class="col-xs-6" style="margin-top:20px"> 
+			     <ul class="list-inline">
+				 <li style="color:#70adc2;margin-right:10px"><h5>Andrew Chandra </h5></li>
+				 <li><h5><font color="#bfbfbf">25 minutes ago </font></h5></li>
 			   
 			   </div>
-			</div>
-			<div class="row">
-			   <div class="col-xs-1" style="padding-top:25px">
-			      <i class="fa fa-check-circle" style="font-size:40px;color:#336699"></i>
+			   <div class="col-xs-3" style="margin-top:20px;color:#009933">
+			     <h5 class="pull-right"> Designing Team</h5>
+			   
 			   </div>
-			   <div class="col-xs-11">
-			     <div class="row" style="border-bottom:1px solid lightgray;padding-top:26px;padding-left:20px;margin-left:2px">
-			      <h4><b>Write an article about design trends </b></h4>
-				  <p style="line-height:1.6;padding:30px 30px 30px 2px;font-size:13px;"> Design helps us understand our world, and trends place us in time. The overarching design trend for 2019? Just like in every other part of 
-				  life, we seem to be in opposition with ourselves: this year is all about contradictions. 
-				  Design trends from conflicting eras and opposing ends of the visual spectrum are all vying for attention.</p>
-				  </div>
-				  <div class="row" style="font-size:12px;color:gray;border-bottom:1px solid lightgray;padding-top:30px;padding-left:20px;padding-bottom:30px;margin-left:2px">
-				      <p>Write an article about design trends  13:00:99</p>
-					 <p>Write an article about design trends  13:00:99</p>
-					 <p>Write an article about design trends  13:00:99</p>
-				  </div>
-				  <div class="row" style="border-bottom:1px solid lightgray;padding-top:35px;padding-left:15px;padding-bottom:40px;margin-left:2px" >
-				    <p style="font-size:13px;color:#0099ff"> <i class="fa fa-check-circle" style="font-size:25px;color:#336699;margin-right:15px"></i> Natalie completed this task  <font color="gray" style="margin-left:17px"> 25 Feb,2018</font></p>
-				  </div>
-				  <div class="row" style="margin-top:140px">
-				    <div class="col-xs-9" style="background-color:#f0f3f5">
-					  <input type="text" placeholder="   Write a comment" style="background-color:#f0f3f5;border:1px solid transparent;height:60px;width:100%">
-					</div>
-					<div class="col-xs-2 forw" >
-					   <i class="fa fa-mail-forward" style="font-size:26px;color:white"></i>
-					</div>
-				  </div>
-			   </div>
-			
-			</div>
-		  </div>
-		</div>
-	  
-	  </div>
-	<script>
-	   var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+			  </div>
+		      <div class="row" style="padding-left:100px;padding-right:40px;padding-top:20px;">
+			     <h4><b>It's Task Management Software </b></h4>
+			      <p style="border-bottom:1px solid #e6e6e6;padding-bottom:20px">Task Management tools abound in the marketplace. Some are free.Task Management tools abound in the marketplace. Some are free.
+				  Task Management tools abound in the marketplace. Some are free.</p>
+			  
+			  
+			  </div>
+		      <div class="row" style="padding:20px 20px 20px 95px">
+		         <ul class="list-inline">
+				    <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				  
+				 
+				 
+				 </ul>
+		   </div>
+		   <div class="row"style="background-color:#f1ffe8;padding:20px 10px 20px 10px" >
+		   <div class="col-xs-2" style="margin-left:20px">
+		      <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'>
+		   
+		   </div>
+		    <div class="col-xs-9">
+       
+	           <input type="text" placeholder="    Write Commments   "  style="width:100%;height:50px;border:1px solid transparent">
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  var dropdownContent = this.nextElementSibling;
-  
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
-}
-	</script>
+			</div>
+		   
+		   </div>
+	   
+	   </div>
+	   <div class="row" style="background-color:white;box-shadow:0px 10px 10px lightgray;padding-left:18px;padding-right:18px;margin-top:30px">
+		      <div class="row">
+			    <div class="col-xs-2" style="margin-right:10px">
+			     <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='50' width='50' alt='Avatar'style="margin-left:30px;margin-top:20px">
+			   </div>
+			   <div class="col-xs-6" style="margin-top:20px"> 
+			     <ul class="list-inline">
+				 <li style="margin-right:10px;color:#70adc2"><h5>Andrew Chandra </h5></li>
+				 <li><h5><font color="#bfbfbf">25 minutes ago </font></h5></li>
+			   
+			   </div>
+			   <div class="col-xs-3" style="margin-top:20px;color:#009933">
+			     <h5 class="pull-right"> Designing Team</h5>
+			   
+			   </div>
+			  </div>
+		      <div class="row" style="padding-left:100px;padding-right:40px;padding-top:20px;">
+			     <h4><b>It's Task Management Software </b></h4>
+			      <p style="border-bottom:1px solid #e6e6e6;padding-bottom:20px">Task Management tools abound in the marketplace. Some are free.Task Management tools abound in the marketplace. Some are free.
+				  Task Management tools abound in the marketplace. Some are free.</p>
+			  
+			  
+			  </div>
+		      <div class="row" style="padding:20px 20px 20px 95px">
+		         <ul class="list-inline">
+				    <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				  
+				 
+				 
+				 </ul>
+		   </div>
+		   <div class="row"style="background-color:#f1ffe8;padding:20px 10px 20px 10px" >
+		   <div class="col-xs-2" style="margin-left:20px">
+		      <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'>
+		   
+		   </div>
+		    <div class="col-xs-9">
+       
+	           <input type="text" placeholder="    Write Commments   "  style="width:100%;height:50px;border:1px solid transparent">
+
+			</div>
+		   
+		   </div>
+	   
+	   </div><!--end-->
+	   </div>
+	   
+	   <div class="page hide" id="teams"  data-page="teams">
+	      <div class="row" style="background-color:white;box-shadow:0px 10px 10px lightgray;padding-left:18px;padding-right:18px;margin-top:30px">
+		      <div class="row">
+			    <div class="col-xs-2" style="margin-right:10px">
+			     <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='50' width='50' alt='Avatar'style="margin-left:30px;margin-top:20px">
+			   </div>
+			   <div class="col-xs-6" style="margin-top:20px"> 
+			     <ul class="list-inline">
+				 <li style="margin-right:10px;color:#70adc2"><h5>Andrew Chandra </h5></li>
+				 <li><h5><font color="#bfbfbf">25 minutes ago </font></h5></li>
+			   
+			   </div>
+			   <div class="col-xs-3" style="margin-top:20px;color:#009933">
+			     <h5 class="pull-right"> Designing Team</h5>
+			   
+			   </div>
+			  </div>
+		      <div class="row" style="padding-left:100px;padding-right:40px;padding-top:20px;">
+			     <h4><b>It's Task Management Software </b></h4>
+			      <p style="border-bottom:1px solid #e6e6e6;padding-bottom:20px">Task Management tools abound in the marketplace. Some are free.Task Management tools abound in the marketplace. Some are free.
+				  Task Management tools abound in the marketplace. Some are free.</p>
+			  
+			  
+			  </div>
+		      <div class="row" style="padding:20px 20px 20px 95px">
+		         <ul class="list-inline">
+				    <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				  
+				 
+				 
+				 </ul>
+		   </div>
+		   <div class="row"style="background-color:#f1ffe8;padding:20px 10px 20px 10px" >
+		   <div class="col-xs-2" style="margin-left:20px">
+		      <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'>
+		   
+		   </div>
+		    <div class="col-xs-9">
+       
+	           <input type="text" placeholder="    Write Commments   "  style="width:100%;height:50px;border:1px solid transparent">
+
+			</div>
+		   
+		   </div>
+	   
+	   </div>
+	   </div>
+	   <div class="page hide" id="projects"  data-page="projects">
+	      <div class="row" style="background-color:white;box-shadow:0px 10px 10px lightgray;padding-left:18px;padding-right:18px;margin-top:30px">
+		      <div class="row">
+			    <div class="col-xs-2" style="margin-right:10px">
+			     <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='50' width='50' alt='Avatar'style="margin-left:30px;margin-top:20px">
+			   </div>
+			   <div class="col-xs-6" style="margin-top:20px"> 
+			     <ul class="list-inline">
+				 <li style="margin-right:10px;color:#70adc2"><h5>Andrew Chandra </h5></li>
+				 <li><h5><font color="#bfbfbf">25 minutes ago </font></h5></li>
+			   
+			   </div>
+			   <div class="col-xs-3" style="margin-top:20px;color:#009933">
+			     <h5 class="pull-right"> Designing Team</h5>
+			   
+			   </div>
+			  </div>
+		      <div class="row" style="padding-left:100px;padding-right:40px;padding-top:20px;">
+			     <h4><b>It's Task Management Software </b></h4>
+			      <p style="border-bottom:1px solid #e6e6e6;padding-bottom:20px">Task Management tools abound in the marketplace. Some are free.Task Management tools abound in the marketplace. Some are free.
+				  Task Management tools abound in the marketplace. Some are free.</p>
+			  
+			  
+			  </div>
+		      <div class="row" style="padding:20px 20px 20px 95px">
+		         <ul class="list-inline">
+				    <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				  
+				 
+				 
+				 </ul>
+		   </div>
+		   <div class="row"style="background-color:#f1ffe8;padding:20px 10px 20px 10px" >
+		   <div class="col-xs-2" style="margin-left:20px">
+		      <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'>
+		   
+		   </div>
+		    <div class="col-xs-9">
+       
+	           <input type="text" placeholder="    Write Commments   "  style="width:100%;height:50px;border:1px solid transparent">
+
+			</div>
+		   
+		   </div>
+	   
+	   </div>
+	   </div>
+	   <div class="page hide" id="bookmarks"  data-page="bookmarks">
+	      <div class="row" style="background-color:white;box-shadow:0px 10px 10px lightgray;padding-left:18px;padding-right:18px;margin-top:30px">
+		      <div class="row">
+			    <div class="col-xs-2" style="margin-right:10px">
+			     <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='50' width='50' alt='Avatar'style="margin-left:30px;margin-top:20px">
+			   </div>
+			   <div class="col-xs-6" style="margin-top:20px"> 
+			     <ul class="list-inline">
+				 <li style="margin-right:10px;color:#70adc2"><h5>Andrew Chandra </h5></li>
+				 <li><h5><font color="#bfbfbf">25 minutes ago </font></h5></li>
+			   
+			   </div>
+			   <div class="col-xs-3" style="margin-top:20px;color:#009933">
+			     <h5 class="pull-right"> Designing Team</h5>
+			   
+			   </div>
+			  </div>
+		      <div class="row" style="padding-left:100px;padding-right:40px;padding-top:20px;">
+			     <h4><b>It's Task Management Software </b></h4>
+			      <p style="border-bottom:1px solid #e6e6e6;padding-bottom:20px">Task Management tools abound in the marketplace. Some are free.Task Management tools abound in the marketplace. Some are free.
+				  Task Management tools abound in the marketplace. Some are free.</p>
+			  
+			  
+			  </div>
+		      <div class="row" style="padding:20px 20px 20px 95px">
+		         <ul class="list-inline">
+				    <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				   <li><img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'></li>
+				  
+				 
+				 
+				 </ul>
+		   </div>
+		   <div class="row"style="background-color:#f1ffe8;padding:20px 10px 20px 10px" >
+		   <div class="col-xs-2" style="margin-left:20px">
+		      <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='40' width='40' alt='Avatar'>
+		   
+		   </div>
+		    <div class="col-xs-9">
+       
+	           <input type="text" placeholder="    Write Commments   "  style="width:100%;height:50px;border:1px solid transparent">
+
+			</div>
+		   
+		   </div>
+	   
+	   </div>
+	   </div>
+	   </div>
+	   <div class="col-sm-3 lastcol" >
+	      <div class="row" style="background-color:#303336;padding-top:10px;box-shadow:0px 10px 10px lightgray">
+		     <div class="row" style="padding-left:35px">
+			   <h5 style="color:white">Invite People </h5> 
+			 
+			 </div>
+		     <div class="row" style="padding-left:6px;cursor:pointer;padding-bottom:20px">
+			     <ul class="invite" style="list-style-type:none;">
+				    <li> <div class="row" >
+					        <h5 >Mobile</h5>
+					
+					    </div> </li>
+						<li> <div class="row" >
+					        <h5 >Email</h5>
+					
+					    </div> </li>
+						<li> <div class="row" >
+					        <h5 >Which team</h5>
+					
+					    </div> </li>
+				 
+				 
+				 </ul>
+			 
+			 </div>
+		      <div class="row" style="padding-left:15px;">
+		   <button class="btn text-center" style="background-color:white;color:blue;width:97%;border-radius:0px;padding:8px 5px 8px 5px">Send </button>
+		    
+		  
+		  </div>
+		  </div>
+		  
+		  
+		  <div class="row"  style="margin-top:20px;box-shadow:0px 10px 10px lightgray;padding-left:20px">
+		     <h4>Top Performers </h4>
+		     <div class="row" style="margin-bottom:20px">
+			    <div class="col-xs-2" style="margin-top:9px">
+				   <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='33' width='33' alt='Avatar'>
+				
+				</div>
+				<div class="Col-xs-9" style="padding-left:3px">
+				  <ul class="list-inline"><li> <h6 style="color:#70adc2;padding-left:3px">Andrew Chandra </h6></li> <li> <h6 style="color:#bfbfbf;margin-left:9px">First position</h6> </li>
+				 </ul>
+				 <h6 style="margin-left:55px;margin-top:-12px;color:#009933"><b>Designing Team</b> </h6>
+				</div>
+			 
+			 </div>
+			 <div class="row" style="margin-bottom:20px">
+			    <div class="col-xs-2" style="margin-top:9px">
+				   <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='33' width='33' alt='Avatar'>
+				
+				</div>
+				<div class="Col-xs-9" style="padding-left:3px">
+				  <ul class="list-inline"><li> <h6 style="color:#70adc2;padding-left:3px">Andrew Chandra </h6></li> <li> <h6 style="color:#bfbfbf;margin-left:9px">First position</h6> </li>
+				 </ul>
+				 <h6 style="margin-left:55px;margin-top:-12px;color:#009933"><b>Designing Team</b> </h6>
+				</div>
+			 
+			 </div>
+			 <div class="row" style="margin-bottom:20px">
+			    <div class="col-xs-2" style="margin-top:9px">
+				   <img src=' https://www.infradata.nl/media/3519/avatar.png?anchor=center&mode=crop&width=750&height=750' class='img-circle'			  
+				  height='33' width='33' alt='Avatar'>
+				
+				</div>
+				<div class="Col-xs-9" style="padding-left:3px">
+				  <ul class="list-inline"><li> <h6 style="color:#70adc2;padding-left:3px">Andrew Chandra </h6></li> <li> <h6 style="color:#bfbfbf;margin-left:9px">First position</h6> </li>
+				 </ul>
+				 <h6 style="margin-left:55px;margin-top:-12px;color:#009933"><b>Designing Team</b> </h6>
+				</div>
+			 
+			 </div>
+			 
+		  
+		  
+		  </div>
+	      
+	   </div>
+   
+   </div>
+
+
+
+</div>	
+	 <script>
+  $(document).ready(function() {
+    $("#menu1 li a").on('click', function(e) {
+		  $('li a').removeClass('active');
+          $(this).addClass('active');
+        e.preventDefault()
+        var page = $(this).data('page');
+        $("#pages .page:not('.hide')").stop().fadeOut('fast', function() {
+            $(this).addClass('hide');
+           
+            $('#pages .page[data-page="'+page+'"]').fadeIn('slow').removeClass('hide');
+        });
+		
+    });
+});
+</script>
 	
+	
+	
+
 </body>
 </html>
